@@ -1,0 +1,48 @@
+
+#home_menu {
+  font-size:1.3em;
+}
+#homeMenuWrapper{
+  width:74%;
+  float:left;
+}
+
+#home_menu #strats-basic_wrapper {
+  width:27%;
+}
+#home_menu #strats-spreads_wrapper {
+  width:27%;
+}
+#home_menu #strats-advanced_wrapper {
+  width:27%;
+}
+#home_menu #strats-advanced_wrapper li{
+  float:none;
+  width:100%;
+}
+#home_menu #strats-custom_wrapper {
+  width:19%;
+}
+
+#news{
+  float:left;
+  width:25%;
+}
+#news ul{
+	padding-left:1em;
+}
+#news li{
+  margin-bottom:0.5em;
+}
+.ad-ctnr.--home-banner {
+  margin-top: 18px;
+  padding-right: 10px;
+}
+
+@media (max-width: 480px) {
+  #news, .mobile #homeMenuWrapper{
+    float:none;
+    clear:left;
+    width:100%;
+  }
+}

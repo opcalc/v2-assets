@@ -1,0 +1,256 @@
+body{
+	background-color:#06386a;
+	text-align:center;
+	margin:0; padding:0;
+	font-family: verdana, arial, san-serif;
+	font-size:0.875em;
+  background-image: url(https://static.optionsprofitcalculator.com/images/bg-tile.gif); /* absolute-url */
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+#supertop{
+  text-align:right;
+  width:968px;
+  margin: 5px auto 0;
+}
+#supertop a{
+  color:#fff;
+}
+#top {
+  width: 968px;
+  height:auto;
+  min-height:102px;
+  background-image: url(https://static.optionsprofitcalculator.com/images/head.jpg); /* absolute-url */
+  background-repeat: no-repeat;
+  background-color:#fff;
+  text-align: left;
+  padding: 0;
+  margin: 10px auto 0;
+  position: relative;
+  background-color: #ff331f;
+  border:1px solid black;
+}
+
+#main{
+	width:968px;
+	background-color:#FFFFFF;
+	text-align:left;
+	margin:0 auto 0 auto;
+}
+body.full #supertop, body.full #top, body.full #main{
+  width:90%;
+  min-width: 1020px /*968px;*/
+}
+body.full #top{
+  min-height: 100px;
+}
+body.full #top_menu{
+  margin-top:10px;
+}
+body.full #menu{
+  left:0;
+  margin-left:185px;
+  top:0;
+  width:auto;
+}
+body.full #menu #top_but-calculator{
+  margin-bottom:0;
+  min-width:752px;
+  width:80%;
+}
+#menu .follow{
+  position:absolute;
+  top:3px;
+  right: 0;
+  color:#fff;
+  font-weight:bold;
+}
+#menu .follow p, #menu .follow div{
+ float: left;
+ margin: 0;
+ color: inherit;
+}
+#menu .follow div{
+ width:194px;
+}
+#menu .follow a{
+ margin-top:-9px;
+}
+#menu .follow a.addthis_button_google_plusone{
+ margin-top:-5px;
+ width: 38px;
+}
+
+#main_pad{
+	background-color:#FFFFFF;
+	margin:0px 10px;
+  padding-bottom:10px;
+  padding-top:1px;
+  min-height: 790px;
+}
+.ad .s {
+	top:0; right:0;
+	position:absolute;
+}
+.results .ads{
+  padding: 0 .5em;
+}
+
+#karea{
+	height:2px;
+	overflow:hidden;
+}
+#karea p{
+	padding-top:10px;
+}
+
+.leftie{
+float:left;
+}
+.bot_ad{
+text-align:center;
+padding:20px 0px;
+}
+.results{
+clear:both;
+padding-top:10px;
+}
+.strat_ad_space{
+  float:right;
+  width:300px;
+  height:250px;
+}
+
+
+.close_x{
+  /*background-color: #ddd;*/
+  background-image:url('https://static.optionsprofitcalculator.com/images/close-x.gif'); /* absolute-url */
+  width:11px;
+  height:11px;
+  position:absolute;
+  top:10px;
+  right:5px;
+
+  display:none;
+}
+*:hover>.close_x{
+  display:block;
+}
+
+.msg:hover .close_x{
+  position:relative;
+  display:inline-block;
+  top:0;
+  left:5px;
+}
+
+#tab_holder_tabs{
+ list-style-type:none;
+ padding:0;
+}
+#tab_holder{
+ padding:0;
+ margin:0;
+ width:170px;
+ float:left;
+ overflow:hidden;
+ margin-right:-170px;
+ /*padding-bottom:70px;*/
+
+ position:absolute;
+ top:0;
+ left:10px;
+ max-height: 100vh;
+}
+/*
+#tab_holder.fixed{
+ position:fixed;
+ top:0;
+ *left:-475px;
+ *margin-left:50%
+}*/
+#content_holder{
+ float:left;
+ margin-left:190px;
+ width:740px;
+}
+.full #content_holder{
+  width:auto;
+  max-width: calc(100% - 190px);
+}
+
+.stratTab{
+ display:block;
+ width:140px;
+ padding:5px 3px;
+ color:#000;
+ position: relative;
+}
+
+.active_tab{
+  position:relative;
+  top:5px;
+  padding-top:5px;
+  padding-bottom:10px;
+  font-size:12px;
+  background-color:#ffffff;
+  color:#000000;
+  text-decoration:none;
+  font-weight:bold;
+}
+.normal_tab{
+  position:relative;
+	top:7px;
+	font-size:12px;
+  color:#ffffff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+#tabs{
+ position:relative;
+ border:2px solid;
+ border-left-color:#88a;
+ border-top-color:#88a;
+ border-right-color: #aae;
+ border-bottom-color: #aae;
+ background-color:#fcfcfc;
+
+/* height:450px;
+ overflow:auto;*/
+}
+
+.footer{
+  padding:10px 0 50px 0;
+  color:#eee;
+  font-size:80%;
+}
+.footer a{
+  color:#8cf;
+
+}
+
+
+.clearfix {display: inline-block;}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+#invisible_shield {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+}

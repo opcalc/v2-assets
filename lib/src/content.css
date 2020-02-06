@@ -1,0 +1,256 @@
+/** Tags and basic content **/
+h1{
+font-size:18px;
+  color:#003366;
+  font-family:verdana, arial, san-serif;
+  padding-bottom:0px;
+}
+h2{
+  font-size:14px;
+  color:#A50000;
+  font-family:verdana, arial, san-serif;
+  padding-bottom:0px;
+}
+h3{
+  font-size:14px;
+  color:#333;
+  font-family:arial, san-serif;
+  padding-bottom:0px;
+}
+p{
+  padding-top:0px;
+  color: #2a2a2a;
+}
+a{
+	color:#333399;
+}
+a.memb{
+  color:#999933;
+}
+
+.info-box{
+}
+
+.z1{
+  background-color:#e8e8e8;
+}
+.z2{
+ background-color:#fff;
+}
+
+.button, .smallButton{
+  color:#FFF;
+  text-decoration:none;
+  padding:2px 8px;
+  font-size:1.2em;
+  font-weight:bold;
+
+  border:none;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+
+  background: -moz-linear-gradient(top, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 26%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(43, 43, 43, 1) 76%, rgba(19, 19, 19, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76, 76, 76, 1)), color-stop(26%,rgba(89, 89, 89, 1)), color-stop(50%,rgba(44, 44, 44, 1)), color-stop(51%,rgba(0, 0, 0, 1)), color-stop(76%,rgba(43, 43, 43, 1)), color-stop(100%,rgba(19, 19, 19, 1)));
+  background: -webkit-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  background: -o-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  background: linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4d4d', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+  background-image:url('https://static.optionsprofitcalculator.com/images/button-bg.gif'); /* absolute-url */
+
+  -webkit-appearance:none;
+  display:block; /* for old ie */
+  display:inline-block; /* for newer browsers */
+
+}
+.smallButton{
+  font-size:1em;
+}
+
+.minor{
+  font-size:.9em;
+  color:#666;
+}
+.major{
+  font-size:1.25em;
+  color:#000;
+}
+.loading{
+  color:#888;
+  padding-right:18px;
+  border-bottom: none !important;
+  /*cursor:default;*/
+  background-position: top right;
+  background-image:url(https://static.optionsprofitcalculator.com/images/loading.gif); /* absolute-url */
+  background-repeat: no-repeat;
+}
+.highlight {
+  color: #880000;
+  font-weight: bold;
+}
+
+.terms{
+  font-style: italic;
+}
+.alert{
+background-color:#ff0000;
+padding:2px 5px;
+color:#ffb;
+font-weight:bold;
+}
+.txt_error{
+  font-weight:bold;
+  color:#900;
+}
+
+.field_error{
+  color:#f00 !important;
+  border-color:#f00 !important;
+  font-weight:bold;
+}
+input.field_error{
+  font-weight:normal;
+}
+
+#status_messages{
+  background-color:#fff;
+  border:1px solid #336;
+  border-top:none;
+/*  padding:3px 6px*/
+  display:none;
+  margin-bottom:.5em;
+
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+}
+.msg{
+  padding:.25em 1em;
+  position:relative;
+}
+.panel {
+  padding: 0.5em 1.5em;
+  background-color: #eeeef3;
+  border-radius: 3px;
+}
+.close_x{
+  text-indent:-5000px;
+
+}
+.help{
+  border: 2px solid #DDD;
+  padding: 0px 3px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: white;
+  background-color: #44D;
+  text-decoration: none;
+  border-radius: 10px;
+  -moz-box-shadow: 1px 1px 3px #888;
+  -webkit-box-shadow: 1px 1px 3px #888;
+  box-shadow: 1px 1#px 3px #888;
+  border-image: initial;
+}
+
+.jq_start_hidden{
+  display:none;
+}
+
+/** other **/
+/*
+.usel_tab{
+color:#000;
+	background-color:#eee; padding:4px 8px; border-top:1px solid #fff; border-left:1px solid #fff; border-right:1px solid #ccc;
+}
+.sel_tab{
+color:#fff;
+	top:-2px; position:relative; background-color:#f93; padding:4px 8px; border-top:1px solid #fc6;  border-left:1px solid #fc6; border-right:1px solid #e72;
+}
+
+.sel_tab a{color:#fff; text-decoration:none;}
+.usel_tab a{color:#000; text-decoration:none;}
+   */
+.dialog_tab_selected a{
+  text-decoration:none;
+  color:#000;
+}
+
+#tab_holder .dialog_tab {
+  padding-bottom:0;
+  padding-right:0;
+  width:165px;
+  margin-left:0;
+}
+
+#tab_holder .dialog_tab div{
+  padding:5px 0 5px 5px;
+}
+
+#tab_holder .dialog_tab_selected{
+  background-image: url(https://static.optionsprofitcalculator.com/images/tab-bg-top.gif); /* absolute-url */
+  background-position:3px 5px;
+  background-repeat:no-repeat;
+}
+#tab_holder .dialog_tab_selected div{
+  background-image: url(https://static.optionsprofitcalculator.com/images/tab-bg-bot.gif); /* absolute-url */
+  background-repeat:no-repeat;
+  background-position:left bottom;
+}
+#tab_holder .dialog_tab .tab_fade_top{
+  position:absolute;
+  top:-57px;
+  right:0;
+  display:none;
+}
+#tab_holder .dialog_tab .tab_fade_bot{
+  position:absolute;
+  bottom:-63px;
+  right:0;
+  display:none;
+}
+#tab_holder .dialog_tab_selected .tab_fade_top, #tab_holder .dialog_tab_selected .tab_fade_bot{
+  display:block;
+}
+#tab_holder .dialog_tab_selected .tab_fade_top{
+  *height:16px;
+  *width:1px;
+  *top:-10px;
+}
+#tab_holder .vertical_ad{
+  margin-top:1em;
+  display: inline-block;
+}
+a.dim_link{
+ color:#000000;
+}
+
+a.subtle{
+  text-decoration:none;
+  border-bottom:1px dashed #339;
+  color:#339;
+}
+#supertop .info-box {
+    position: relative;
+    padding:0.5em 1.5em 0.5em 1em;
+    font-size:1.2em;
+}
+#supertop .info-box a{
+  color:#339;
+}
+
+.more_holder>a{
+  background-image: url(https://static.optionsprofitcalculator.com/images/ui-arrow-right-subtle.gif); /* absolute-url */
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  padding-left:9px;
+}
+.more_holder>a.expanded{
+  background-image: url(https://static.optionsprofitcalculator.com/images/ui-arrow-down-subtle.gif); /* absolute-url */
+}

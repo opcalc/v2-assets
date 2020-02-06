@@ -1,0 +1,363 @@
+#status_messages{
+  /*margin-left:160px;*/
+  max-width:770px;
+  float:left;
+  margin-left:185px;
+
+  position:relative;
+  /*height:1px;*/
+  overflow:visible;
+  z-index:20;
+}
+
+/** Strategy-specific **/
+.strat-info{
+  width:385px;
+  margin-bottom: 2.5em;
+}
+.full .strat-info{
+  min-width:385px;
+  width:50%;
+}
+.cat{
+	width:120px;
+	float:left;
+	clear:left;
+}
+.inputWrapper{
+  clear:left;
+}
+
+select.subtle, input.subtle{
+  border:none;
+}
+select.subtle:hover, input.subtle:hover{
+  border:none;
+  border-bottom:1px dashed #339;
+}
+select.subtle-editing, input.subtle-editing{
+  border:inherit;
+}
+
+.requestButton{
+ border:none;
+ padding:2px 5px;
+ background-color:#ddd;
+}
+.submitInputs .button{
+  display:block;
+  clear:both;
+  margin-left:30px;
+}
+
+.stratContent h2{
+  clear:both;
+}
+.element{
+  margin-bottom:1em;
+}
+
+.input{
+	clear:right;
+}
+input.input[disabled='disabled']{
+ background-color:#fff;
+ border:none;
+ color:#000000;
+ text-align:left;
+}
+label.inputLabel{
+ width:9em;
+ display:block;
+ float:left;
+ /*height:16px;*/
+ padding-top:3px;
+ padding-bottom:5px;
+ clear:left;
+}
+label.lineInput {
+  padding: 1em 0 .25em;
+  display: block;
+}
+input.input, select.input{
+ margin-left:10px;
+ padding:0;
+ margin-bottom:5px;
+}
+input.inputWithDollar{
+ margin-left:2px;
+}
+input.inputWithHash{
+ margin-left:0;
+}
+input.inputInline{
+ margin-left:0;
+}
+input.inputNumeric{
+ text-align:right;
+}
+span.input{
+ height:24px;
+ display:block;
+ float:left;
+ clear:right;
+}
+span.inputReadOnly{
+  display:inline;
+  float:none;
+  clear:none;
+  padding-right:5px;
+}
+
+.submitInputs{
+  padding-top:1em;
+}
+
+.more_holder{
+  clear:both;
+}
+
+.element_option_selector{
+  position:relative;
+}
+.element_option_selector .options_selector{
+  position:absolute;
+  left:0;
+  top:1.4em;
+  padding:5px;
+  background-color:#fff;
+  border:1px solid #666;
+  z-index: 2;
+  -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+/** options selector **/
+body .option_selector{
+  overflow-y:scroll;
+  height:300px;
+}
+.options_set{
+  display:none;
+}
+.options_set_active{
+  display:block;
+}
+.dates {
+  color: #ddd;
+}
+.dates .options_date_link_active {
+  color: #222;
+  text-decoration:none;
+  font-weight:bold;
+}
+.dates .options_date_link {
+  font-size:1.1em;
+  padding-right: 0.1em;
+  padding-left: 0.1em;
+  color: #444;
+}
+
+.option_selector table{
+  margin-top:.5em;
+  border:1px solid #666;
+}
+
+.option_selector tr.type th, .option_selector tr.cols th{
+  border-bottom:1px solid #666;
+  font-weight:bold;
+  background-color:#CCC;
+}
+.option_selector tr td a{
+  padding:0 .5em;
+  color:#444;
+}
+.option_selector tr td.r a{
+  color:#00f;
+}
+.option_selector tr td.r.m a{
+  color:#00f;
+}
+.option_selector tr.otm td.c, .option_selector tr.itm td.p {
+  background-color:#D8D8D8;
+}
+.option_selector .s{
+  font-weight:bold;
+  background-color:#CCC;
+  padding:0 .5em;
+  border-right: 1px solid #666;
+  border-left: 1px solid #666;
+}
+
+#main{
+  position:relative;
+}
+#tab_holder .ad.leftCol{
+  padding:0;
+}
+.stratTab a.name {
+  width: 100%;
+  display: inline-block;
+}
+#content_right {
+  position:absolute;
+  right:10px;
+  top:10px;/*10px;*/
+  width:336px;
+}
+.ad.strat{
+  float:right;
+}
+#resultsAd{
+  clear:both;
+  margin-left:190px;
+  margin-top:270px;
+  margin-bottom:40px;
+  *margin-top:200px;
+  width:728px;
+}
+.summary .showResultsBut, .summary .loading-wrapper {
+  text-align:center;
+  display:block;
+}
+.summary .loading-wrapper{
+ padding:2em 0;
+ font-size:1.5em;
+}
+.summary p {
+  margin: .5em 0;
+}
+
+.summary h2, .summary h3{
+  display:inline-block;
+  margin:1em 0 0;
+}
+.summary h3:before{
+  content:" - ";
+}
+
+/** sharing **/
+.shareHolder{
+  margin-top:1.5em;
+  /*display:none;*/
+  /*min-height:24px;*/
+}
+.shareHolder>span{
+  float:left;
+}
+.sharePanel{
+ border:1px solid #888;
+ padding:.5em 1em;
+ top:-1px;
+ position:relative;
+ z-index:10;
+ border-radius: 10px;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ display: none;
+ width:50%;
+}
+.summary .sharePanel .loading-wrapper{
+  padding:0;
+  font-size:1em;
+}
+.shareMenu{
+  display: inline-block;
+}
+.shareMenu.active {
+  background: transparent url('https://static.optionsprofitcalculator.com/images/balloon-arrow-down.gif') no-repeat 2px 18px; /* absolute-url */
+  height: 30px;
+  z-index:11;
+  position:relative;
+  /*border:1px solid #888;
+  background-color:#fff;
+  border-bottom:none;
+  z-index:11;
+  position:relative;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;*/
+}
+.shareMenu.active.fb{
+  background-position: 2px 18px;
+}
+.shareMenu.active.tw{
+  background-position: 22px 18px;
+}
+.shareMenu.active.link{
+  background-position: 60px 18px;
+}
+
+.shareMenu .shareIcon{
+  padding:0 2px 0;
+  height:18px;
+  background: url(//s7.addthis.com/static/r07/widget40.png) no-repeat left;
+  overflow: hidden;
+  display: block;
+  float:left;
+  background-position: 0 0;
+  height: 16px;
+  width: 16px;
+  line-height: 16px!important;
+  text-indent: -10000px;
+}
+.shareMenu .facebook{
+  background-position: 2px -1536px;
+}
+.shareMenu .twitter{
+  background-position: 2px -5024px;
+}
+.shareMenu .google{
+	background-position: 0 -2048px;
+}
+/*.shareMenu .link{
+  background-position: 2px -1424px;
+}*/
+.shareMenu span{
+  display: block;
+  float:left;
+}
+
+/** temp **/
+#feedback_section{
+  clear:both; 
+  margin-top:1em; 
+  margin-bottom:1em;
+}
+/** graph **/
+.results > .graph {
+  margin-bottom: 30px;
+  overflow-y: auto;
+  padding-bottom: 17px;
+}
+
+.ad-ctnr.--mobile-calculation {
+  margin-top: 10px;
+  max-height: 60vw;
+}
+
+#loading-ctnr{
+  clear: left;
+  margin-left: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.full #loading-ctnr{
+  margin-left: 190px;
+}
+
+#loading-ctnr > .loading-wrapper{
+  text-align: center;
+  display: block;
+  font-size: 18px;
+}
+
+#loading-ctnr > .__ad {
+  width: 100%;
+  height: 60vw;
+  max-height: 300px;
+}

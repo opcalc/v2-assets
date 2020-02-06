@@ -1,0 +1,225 @@
+.touch #top{
+  background-image: url('https://static.optionsprofitcalculator.com/images/touch/head.gif'); /* absolute-url */
+}
+.touch #top_menu{
+  padding-left:3px;
+}
+.touch #content_holder{
+  float: none;
+  margin-left: 0;
+  width:100%;
+}
+.touch #tab_holder{
+ float: none;
+ position: static;
+}
+.mobile #tab_holder{
+ width: 100%;
+}
+.tablet #tab_holder{
+ width: 55%;
+}
+.touch .menu_group h3{
+  padding-left:10px;
+}
+.touch #tab_holder .dialog_tab_selected{
+  background-image: url('https://static.optionsprofitcalculator.com/images/button-bg-blu-mid.gif'); /* absolute-url */
+  background-position: left top;
+  background-repeat: repeat;
+}
+.touch #tab_holder .dialog_tab_selected div{
+  background-image: none;
+}
+.touch #tab_holder .dialog_tab_selected img{
+  display:none;
+}
+.touch .stratTab a{
+  color:#333;
+}
+.touch .stratTab .minor{
+  color:#333;
+  font-weight:normal;
+}
+.touch .dialog_tab_selected a, .touch .dialog_tab_selected .minor{
+  color:#fff;
+}
+.touch .close_x{
+  display:block;
+  background-image:url('https://static.optionsprofitcalculator.com/images/close-x-lg.gif'); /* absolute-url */
+  width:22px;
+  height:22px;
+  top: 8px;
+}
+.touch #current_calc_header {
+  /* Copied from .button */
+  color:#FFF;
+  text-decoration:none;
+  padding:2px 8px;
+  margin-bottom: 2px;
+  font-size:1.2em;
+  font-weight:bold;
+
+  border:none;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+
+  background: -moz-linear-gradient(top, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 26%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(43, 43, 43, 1) 76%, rgba(19, 19, 19, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76, 76, 76, 1)), color-stop(26%,rgba(89, 89, 89, 1)), color-stop(50%,rgba(44, 44, 44, 1)), color-stop(51%,rgba(0, 0, 0, 1)), color-stop(76%,rgba(43, 43, 43, 1)), color-stop(100%,rgba(19, 19, 19, 1)));
+  background: -webkit-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  background: -o-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  background: linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4d4d', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+  background-image:url('https://static.optionsprofitcalculator.com/images/button-bg.gif'); /* absolute-url */
+
+  -webkit-appearance:none;
+  display:block; /* for old ie */
+  display:inline-block; /* for newer browsers */
+}
+.touch #current_calc_header:after {
+  content: '▾';
+  margin-left: 0.5em;
+}
+.touch #tab_holder_tabs {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 4;
+  width: calc(100vw - 20px);
+  padding: 1em;
+  margin-top: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000080;
+
+  /*display: -ms-grid;*/
+  display: none;
+  -ms-grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-column-gap: 5px;
+  grid-column-gap: 5px;
+  -ms-grid-row-gap: 3px;
+  grid-row-gap: 3px;
+  border-radius: 3px; }
+
+  .touch #tab_holder_tabs.--show {
+    display: -ms-grid;
+    display: grid;
+}
+.touch #tab_holder .stratTab{
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration:none;
+  padding:2px 8px;
+  margin:0 2px 2px 0;
+  font-size:1.2em;
+  font-weight:bold;
+
+  border:none;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+
+  background: -moz-linear-gradient(top, rgba(76, 76, 76, 1) 0%, rgba(89, 89, 89, 1) 26%, rgba(44, 44, 44, 1) 50%, rgba(0, 0, 0, 1) 51%, rgba(43, 43, 43, 1) 76%, rgba(19, 19, 19, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76, 76, 76, 1)), color-stop(26%,rgba(89, 89, 89, 1)), color-stop(50%,rgba(44, 44, 44, 1)), color-stop(51%,rgba(0, 0, 0, 1)), color-stop(76%,rgba(43, 43, 43, 1)), color-stop(100%,rgba(19, 19, 19, 1)));
+  background: -webkit-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  background: -o-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  background: linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4d4d', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+  background-image:url('https://static.optionsprofitcalculator.com/images/button-bg-blu-lt.gif'); /* absolute-url */
+  background-size: contain;
+
+  -webkit-appearance:none;
+  display:block; /* for old ie */
+  display:inline-block; /* for newer browsers */
+}
+.touch #tab_holder .dialog_tab_selected{
+  background-image:url('https://static.optionsprofitcalculator.com/images/button-bg-blu-mid.gif'); /* absolute-url */
+  background-position: left top;
+  background-repeat: repeat;
+}
+.touch .tab_fade_top,
+.touch .tab_fade_bot{
+ display: none;
+}
+.mobile .strat-info{
+ min-width: 0;
+ width: auto;
+}
+.touch .sharePanel{
+ width: auto;
+}
+.touch .ui-dialog .ui-dialog-content{
+  padding:0.2em 0.1em;
+}
+.touch .ui-dialog{
+  padding:0;
+}
+body.mobile{
+ min-width: 0;
+ width: auto;
+}
+.touch #supertop{
+ margin: 0;
+ width: auto;
+}
+.touch #top{
+ /*shorter background*/
+ margin-top: 0;
+ min-height: 46px;
+ width: auto;
+}
+.touch #menu{
+ top: 0;
+ left: 0;
+ margin-top: 25px;
+ width: auto;
+}
+.touch #home_menu .menu_group ul li{
+  width: 100%
+}
+
+.touch .follow{
+ display: none;
+}
+.touch #strats-basic_wrapper, .touch #info-basic_wrapper,
+.touch #strats-spreads_wrapper, .touch #info-spreads_wrapper,
+.touch #strats-advanced_wrapper, .touch #info-advanced_wrapper,
+.touch #strats-custom_wrapper, .touch #info-custom_wrapper,
+.touch #home_menu #strats-basic_wrapper, .touch #home_menu #info-basic_wrapper,
+.touch #home_menu #strats-spreads_wrapper, .touch #home_menu #info-spreads_wrapper,
+.touch #home_menu #strats-advanced_wrapper, .touch #home_menu #info-advanced_wrapper,
+.touch #home_menu #strats-custom_wrapper, .touch #home_menu #info-custom_wrapper{
+ width:100%;
+}
+.touch #strats-spreads_menu li, .touch #info-spreads_menu li,
+.touch #strats-custom_menu li, .touch #info-custom_menu li{
+ width:50%;
+}
+.touch .tab_fade_top,
+.touch .tab_fade_bot{
+ display: none;
+}
+
+.touch #menu .jq_exclusive_target ul{
+ width:auto;
+}
+.touch #main{
+ width:auto;
+ min-width:0;
+}
+/* !!! #menu top should be margin-top ??? or ie reason its not
+ tab_holder ... * { width: auto }
+ /* !!! change sub-text to not use br
+
+*/
+.touch #tab_holder .vertical_ad{
+ display:none;
+}
+.tablet #resultsAd{
+  margin-top: 0;
+  margin-left: 0;
+}
+.touch #status_messages {
+  margin-left: initial;
+}

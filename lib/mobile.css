@@ -1,0 +1,126 @@
+.mobile #content_holder{
+  float: none;
+  margin-left: 0;
+  width:100%;
+}
+.mobile #tab_holder{
+ float: none;
+ position: static;
+ width: 100%;
+}
+.mobile .menu_group h3{
+  padding-left:10px;
+}
+.mobile #tab_holder .dialog_tab_selected div{
+  background-image: none;
+}
+.mobile #tab_holder .dialog_tab_selected img{
+  display:none;
+}
+.mobile .stratTab a{
+  color:#333;
+}
+.mobile .stratTab .minor{
+  color:#333;
+  font-weight:normal;
+}
+.mobile .dialog_tab_selected a, .mobile .dialog_tab_selected .minor{
+  color:#fff;
+}
+.mobile .close_x{
+  display:block;
+  background-image:url('https://static.optionsprofitcalculator.com/images/close-x-lg.gif'); /* absolute-url */
+  width:22px;
+  height:22px;
+}
+.mobile #tab_holder_tabs {
+  -ms-grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+.mobile .tab_fade_top,
+.mobile .tab_fade_bot{
+ display: none;
+}
+.mobile .strat-info{
+ min-width: 0;
+ width: auto;
+}
+.mobile .sharePanel{
+ width: auto;
+}
+.mobile .ui-dialog .ui-dialog-content{
+  padding:0.2em 0.1em;
+}
+.mobile .ui-dialog{
+  padding:0;
+}
+body.mobile{
+ min-width: 0;
+ width: auto;
+}
+.mobile #supertop{
+ margin: 0;
+ width: auto;
+}
+.mobile #top{
+ /*shorter background*/
+ margin-top: 0;
+ min-height: 46px;
+ width: auto;
+}
+.mobile #menu{
+ top: 0;
+ left: 0;
+ margin-top: 25px;
+ width: auto;
+}
+.mobile #home_menu .menu_group ul li{
+  width: 100%
+}
+
+.mobile .follow{
+ display: none;
+}
+.mobile #strats-basic_wrapper, .mobile #info-basic_wrapper,
+.mobile #strats-spreads_wrapper, .mobile #info-spreads_wrapper,
+.mobile #strats-advanced_wrapper, .mobile #info-advanced_wrapper,
+.mobile #strats-custom_wrapper, .mobile #info-custom_wrapper,
+.mobile #home_menu #strats-basic_wrapper, .mobile #home_menu #info-basic_wrapper,
+.mobile #home_menu #strats-spreads_wrapper, .mobile #home_menu #info-spreads_wrapper,
+.mobile #home_menu #strats-advanced_wrapper, .mobile #home_menu #info-advanced_wrapper,
+.mobile #home_menu #strats-custom_wrapper, .mobile #home_menu #info-custom_wrapper{
+ width:100%;
+}
+.mobile #strats-spreads_menu li, .mobile #info-spreads_menu li,
+.mobile #strats-advanced_wrapper li, .mobile #info-custom_menu li
+{
+ width:50%;
+}
+.mobile .tab_fade_top,
+.mobile .tab_fade_bot{
+ display: none;
+}
+
+.mobile #menu .jq_exclusive_target ul{
+ width:auto;
+}
+.mobile #main{
+ width:auto;
+ min-width:0;
+}
+.mobile .option_selector tr td a {
+  padding: 0.1em 0.25em;
+}
+.mobile .option_selector tr td {
+  height: 1.25em;
+}
+.mobile .trade_summary {
+  font-size:1em;
+  white-space: nowrap;
+}
+
+/* !!! #menu top should be margin-top ??? or ie reason its not
+ tab_holder ... * { width: auto }
+ /* !!! change sub-text to not use br
+
+*/
