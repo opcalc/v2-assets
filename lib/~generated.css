@@ -4,7 +4,7 @@ body{
 	margin:0; padding:0;
 	font-family: verdana, arial, san-serif;
 	font-size:0.875em;
-  background-image: url(https://static.optionsprofitcalculator.com/images/bg-tile.gif); /* absolute-url */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/bg-tile.gif); /* absolute-url */
   background-repeat: repeat-x;
   background-attachment: fixed;
 }
@@ -20,7 +20,7 @@ body{
   width: 968px;
   height:auto;
   min-height:102px;
-  background-image: url(https://static.optionsprofitcalculator.com/images/head.jpg); /* absolute-url */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/head.jpg); /* absolute-url */
   background-repeat: no-repeat;
   background-color:#fff;
   text-align: left;
@@ -124,7 +124,7 @@ padding-top:10px;
 
 .close_x{
   /*background-color: #ddd;*/
-  background-image:url('https://static.optionsprofitcalculator.com/images/close-x.gif'); /* absolute-url */
+  background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/close-x.gif'); /* absolute-url */
   width:11px;
   height:11px;
   position:absolute;
@@ -432,7 +432,7 @@ a.memb{
   background: -ms-linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
   background: linear-gradient(top, rgba(76, 76, 76, 1) 0%,rgba(89, 89, 89, 1) 26%,rgba(44, 44, 44, 1) 50%,rgba(0, 0, 0, 1) 51%,rgba(43, 43, 43, 1) 76%,rgba(19, 19, 19, 1) 100%);
   /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4d4d', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
-  background-image:url('https://static.optionsprofitcalculator.com/images/button-bg.gif'); /* absolute-url */
+  background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/button-bg.gif'); /* absolute-url */
 
   -webkit-appearance:none;
   display:block; /* for old ie */
@@ -457,7 +457,7 @@ a.memb{
   border-bottom: none !important;
   /*cursor:default;*/
   background-position: top right;
-  background-image:url(https://static.optionsprofitcalculator.com/images/loading.gif); /* absolute-url */
+  background-image:url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/loading.gif); /* absolute-url */
   background-repeat: no-repeat;
 }
 .highlight {
@@ -569,12 +569,12 @@ color:#fff;
 }
 
 #tab_holder .dialog_tab_selected{
-  background-image: url(https://static.optionsprofitcalculator.com/images/tab-bg-top.gif); /* absolute-url */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/tab-bg-top.gif); /* absolute-url */
   background-position:3px 5px;
   background-repeat:no-repeat;
 }
 #tab_holder .dialog_tab_selected div{
-  background-image: url(https://static.optionsprofitcalculator.com/images/tab-bg-bot.gif); /* absolute-url */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/tab-bg-bot.gif); /* absolute-url */
   background-repeat:no-repeat;
   background-position:left bottom;
 }
@@ -621,13 +621,13 @@ a.subtle{
 }
 
 .more_holder>a{
-  background-image: url(https://static.optionsprofitcalculator.com/images/ui-arrow-right-subtle.gif); /* absolute-url */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/ui-arrow-right-subtle.gif); /* absolute-url */
   background-repeat: no-repeat;
   background-position: 0 4px;
   padding-left:9px;
 }
 .more_holder>a.expanded{
-  background-image: url(https://static.optionsprofitcalculator.com/images/ui-arrow-down-subtle.gif); /* absolute-url */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/ui-arrow-down-subtle.gif); /* absolute-url */
 }
 #sm-survey-wrapper {
   position: fixed;

@@ -4,7 +4,7 @@ body{
 	margin:0; padding:0;
 	font-family: verdana, arial, san-serif;
 	font-size:0.875em;
-  background-image: url(https://static.optionsprofitcalculator.com/images/bg-tile.gif); /* absolute-url */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/bg-tile.gif); /* absolute-url */
   background-repeat: repeat-x;
   background-attachment: fixed;
 }
@@ -20,7 +20,7 @@ body{
   width: 968px;
   height:auto;
   min-height:102px;
-  background-image: url(https://static.optionsprofitcalculator.com/images/head.jpg); /* absolute-url */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/head.jpg); /* absolute-url */
   background-repeat: no-repeat;
   background-color:#fff;
   text-align: left;
@@ -124,7 +124,7 @@ padding-top:10px;
 
 .close_x{
   /*background-color: #ddd;*/
-  background-image:url('https://static.optionsprofitcalculator.com/images/close-x.gif'); /* absolute-url */
+  background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/close-x.gif'); /* absolute-url */
   width:11px;
   height:11px;
   position:absolute;

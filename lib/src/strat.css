@@ -266,7 +266,7 @@ body .option_selector{
   display: inline-block;
 }
 .shareMenu.active {
-  background: transparent url('https://static.optionsprofitcalculator.com/images/balloon-arrow-down.gif') no-repeat 2px 18px; /* absolute-url */
+  background: transparent url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/balloon-arrow-down.gif') no-repeat 2px 18px; /* absolute-url */
   height: 30px;
   z-index:11;
   position:relative;

@@ -71,7 +71,7 @@ table.graph td.d.hover div a div, table.graph th.t.hover div a div {
   bottom:10px;
 
   /*background-color:#fff;*/
-  background: transparent url('https://static.optionsprofitcalculator.com/images/table-hover-bg.png') right bottom;  /* absolute-url */
+  background: transparent url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/table-hover-bg.png') right bottom;  /* absolute-url */
 
   /*-moz-box-shadow: -2px 1px 4px rgba(0,0,0,0.5);
   -webkit-box-shadow:-2px 1px 4px rgba(0,0,0,0.5);

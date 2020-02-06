@@ -29,7 +29,7 @@
 }
 .mobile .close_x{
   display:block;
-  background-image:url('https://static.optionsprofitcalculator.com/images/close-x-lg.gif'); /* absolute-url */
+  background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/close-x-lg.gif'); /* absolute-url */
   width:22px;
   height:22px;
 }
