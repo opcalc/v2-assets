@@ -64,6 +64,10 @@ a.memb{
   display:inline-block; /* for newer browsers */
 
 }
+.button[disabled], .button.--disabled {
+  background-image: none;
+  background-color: #dddddd;
+}
 .smallButton{
   font-size:1em;
 }
