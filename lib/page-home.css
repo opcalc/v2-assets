@@ -8,7 +8,7 @@
 }
 
 #home_menu #strats-basic_wrapper {
-  width:27%;
+  width:29%;
 }
 #home_menu #strats-spreads_wrapper {
   width:27%;
@@ -16,12 +16,14 @@
 #home_menu #strats-advanced_wrapper {
   width:27%;
 }
-#home_menu #strats-advanced_wrapper li{
+#home_menu #strats-advanced_wrapper li,
+#home_menu #strats-custom_wrapper li
+{
   float:none;
   width:100%;
 }
 #home_menu #strats-custom_wrapper {
-  width:19%;
+  width:17%;
 }
 
 #news{

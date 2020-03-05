@@ -55,8 +55,6 @@ body.full #menu{
 }
 body.full #menu #top_but-calculator{
   margin-bottom:0;
-  min-width:752px;
-  width:80%;
 }
 #menu .follow{
   position:absolute;
@@ -86,7 +84,10 @@ body.full #menu #top_but-calculator{
 	margin:0px 10px;
   padding-bottom:10px;
   padding-top:1px;
-  min-height: 790px;
+  min-height: calc(100vh - 149px - 73px);
+
+  display: flex;
+  align-items: flex-start;
 }
 .ad .s {
 	top:0; right:0;
@@ -151,16 +152,12 @@ padding-top:10px;
 #tab_holder{
  padding:0;
  margin:0;
- width:170px;
- float:left;
- overflow:hidden;
- margin-right:-170px;
+ width: 170px;
+ padding-bottom: 200px;
+ overflow: hidden;
  /*padding-bottom:70px;*/
 
- position:absolute;
- top:0;
- left:10px;
- max-height: 100vh;
+ position:relative;
 }
 /*
 #tab_holder.fixed{
@@ -170,13 +167,14 @@ padding-top:10px;
  *margin-left:50%
 }*/
 #content_holder{
- float:left;
- margin-left:190px;
  width:740px;
 }
 .full #content_holder{
   width:auto;
   max-width: calc(100% - 190px);
+}
+#calcs_holder {
+  margin-left: 12px;
 }
 
 .stratTab{
