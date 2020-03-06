@@ -322,7 +322,7 @@ body .option_selector{
 
 .ad-ctnr.--mobile-calculation {
   margin-top: 10px;
-  max-height: 60vw;
+  /*max-height: 60vw;*/
 }
 
 #loading-ctnr{

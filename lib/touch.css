@@ -216,6 +216,9 @@ body.mobile{
  /* !!! change sub-text to not use br
 
 */
+.touch #tab_holder {
+  padding-bottom: 20px;
+}
 .touch #tab_holder .vertical_ad{
  display:none;
 }
