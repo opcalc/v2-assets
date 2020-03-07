@@ -35,14 +35,15 @@ select.subtle-editing, input.subtle-editing{
 .submitInputs .button{
   display:block;
   clear:both;
-  margin-left:30px;
+  margin: 8px 0;
+  padding: 4px 16px;
 }
 
 .stratContent h2{
   clear:both;
 }
 .element{
-  margin-bottom:1em;
+  margin-bottom:2em;
 }
 
 .input{
@@ -191,7 +192,7 @@ body .option_selector{
 #content_right {
   position:absolute;
   right:10px;
-  margin-top:10px;
+  margin-top:5px;
   width:336px;
 }
 .ad.strat{
@@ -315,6 +316,7 @@ body .option_selector{
 }
 /** graph **/
 .results > .graph {
+  margin-top: 12px;
   margin-bottom: 30px;
   overflow-y: auto;
   padding-bottom: 17px;
