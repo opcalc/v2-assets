@@ -173,6 +173,8 @@ padding-top:10px;
 }
 #calcs_holder {
   margin-left: 12px;
+  min-height: 500px;
+  height: calc(100vh - 200px);
 }
 
 .stratTab{
