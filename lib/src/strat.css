@@ -316,7 +316,7 @@ body .option_selector{
 }
 /** graph **/
 .results > .graph {
-  margin-top: 12px;
+  margin-top: 25px;
   margin-bottom: 30px;
   overflow-y: auto;
   padding-bottom: 17px;
