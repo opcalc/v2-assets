@@ -33,6 +33,7 @@ select.subtle-editing, input.subtle-editing{
  background-color:#ddd;
 }
 .submitInputs .button{
+  cursor: pointer;
   display:block;
   clear:both;
   margin: 8px 0;
