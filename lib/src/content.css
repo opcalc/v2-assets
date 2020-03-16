@@ -126,7 +126,7 @@ input.field_error{
   position: fixed;
   display: flex;
   justify-content: center;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
   z-index:20;
@@ -137,12 +137,12 @@ input.field_error{
 /*  padding:3px 6px*/
 /*  display: none;*/
 
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-top-left-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-topleft: 5px;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
   -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
   box-shadow: 0 2px 2px rgba(0,0,0,0.3);

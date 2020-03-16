@@ -57,7 +57,7 @@ table.graph td.d.hover:first-of-type div a div:after {
   bottom: -5px;
   left: 10px;
 }
-table.graph td.d.hover div a div, table.graph th.t.hover div a div {
+table.graph td.d.hover .hover, table.graph th.t.hover .hover {
   position:absolute;
   min-width:22px;
   width:auto;
@@ -86,6 +86,9 @@ table.graph td.d.hover div a div, table.graph th.t.hover div a div {
   *top: -12px;
   *border:1px solid #999;
   *border-right:none;
+}
+table.graph th.t.hover .hover {
+  font-weight: normal;
 }
 table.graph th.t.hover div a{
   top:-4px;
@@ -213,4 +216,10 @@ table.graph td.d div.overlay{
 .p10{  background-color: rgb(223,255,218); }
 .p5{  background-color: rgb(229,255, 231); }
 
-
+td.d:last-child, th.t:last-child {
+  border-left: 1px solid rgba(209, 209, 209, 0.5)
+}
+th.t:last-child {
+  background: dimgray;
+  color: white;
+}
