@@ -270,3 +270,8 @@ a.subtle{
 .more_holder>a.expanded{
   background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/ui-arrow-down-subtle.gif); /* absolute-url */
 }
+
+/* ezoic cookie accepter */
+.cc_banner p {
+  color: white;
+}
