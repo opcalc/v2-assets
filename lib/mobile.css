@@ -8,6 +8,10 @@
  position: static;
  width: 100%;
 }
+.mobile #calcs_holder {
+  min-height: 0px;
+}
+
 .mobile .menu_group h3{
   padding-left:10px;
 }
