@@ -64,6 +64,7 @@ label.inputLabel{
  padding-top:3px;
  padding-bottom:5px;
  clear:left;
+ font-size: 0.9rem;
 }
 label.lineInput {
   padding: 1em 0 .25em;
@@ -73,6 +74,7 @@ input.input, select.input{
  margin-left:10px;
  padding:0;
  margin-bottom:5px;
+ font-size: 0.9rem;
 }
 input.inputWithDollar{
  margin-left:2px;
@@ -325,6 +327,9 @@ body .option_selector{
 .ad-ctnr.--mobile-calculation {
   margin-top: 10px;
   /*max-height: 60vw;*/
+}
+.ad.strat-ez-intrapage {
+  text-align: center;
 }
 
 #loading-ctnr{
