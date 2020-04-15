@@ -3,8 +3,13 @@
   font-size:1.3em;
 }
 #homeMenuWrapper{
-  width:74%;
+  width:81%;
   float:left;
+}
+@media (min-width: 1280px) {
+  #homeMenuWrapper {
+    width: 970px;
+  }
 }
 
 #home_menu #strats-basic_wrapper {
@@ -27,11 +32,16 @@
 }
 
 #news{
-  float:left;
-  width:25%;
+  float: left;
+  width: 18.5%;
+}
+@media (min-width: 1280px) {
+  #news {
+    width: calc(100% - 970px);
+  }
 }
 #news ul{
-	padding-left:1em;
+	padding-left:2em;
 }
 #news li{
   margin-bottom:0.5em;

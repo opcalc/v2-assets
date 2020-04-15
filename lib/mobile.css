@@ -10,6 +10,25 @@
 }
 .mobile #calcs_holder {
   min-height: 0px;
+  margin-left: 0px;
+}
+
+.mobile [name=underlying-symbol]+.button {
+  text-indent:  -9999px;
+  position:relative;
+  width: 2.5em;
+}
+.mobile [name=underlying-symbol]+.button:after {
+  content:'';
+  position: absolute;
+  top: 0;
+  left:0;
+  background-image:url('/images/search.svg');
+  background-size: 1em;
+  bottom: 0;
+  right: 0;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 .mobile .menu_group h3{
