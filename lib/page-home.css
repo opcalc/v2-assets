@@ -59,3 +59,18 @@
     width:100%;
   }
 }
+@media (max-width: 480px) {
+  .ad.mob-footer-sticky {
+    height: fit-content;
+    width: 100%;
+    background-color: transparent;
+    bottom: 0;
+    margin: 0 auto;
+    visibility: visible;
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+  }
+}

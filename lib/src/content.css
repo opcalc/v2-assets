@@ -275,3 +275,7 @@ a.subtle{
 .cc_banner p {
   color: white;
 }
+
+img[src="https://go.ezoic.net/utilcave_com/img/ezoic.png"] {
+  display:none;
+}
