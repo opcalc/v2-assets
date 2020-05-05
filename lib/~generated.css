@@ -651,6 +651,10 @@ a.subtle{
 .cc_banner p {
   color: white;
 }
+
+img[src="https://go.ezoic.net/utilcave_com/img/ezoic.png"] {
+  display:none;
+}
 #sm-survey-wrapper {
   position: fixed;
   top: 0;
