@@ -360,6 +360,7 @@ body .option_selector{
   height: 60vw;
   max-height: 300px;
 }
+
 table.graph td.d div, table.graph th.t{
  min-width:24px;
  position:relative;

@@ -44,6 +44,7 @@ a.memb{
   padding:2px 8px;
   font-size:1.2em;
   font-weight:bold;
+  cursor: pointer;
 
   border:none;
   border-radius: 8px;
@@ -67,6 +68,7 @@ a.memb{
 .button[disabled], .button.--disabled {
   background-image: none;
   background-color: #dddddd;
+  cursor: default;
 }
 .smallButton{
   font-size:1em;
@@ -269,6 +271,10 @@ a.subtle{
 }
 .more_holder>a.expanded{
   background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/ui-arrow-down-subtle.gif); /* absolute-url */
+}
+.new-warning{
+  background-color: #fffadc;
+  padding: 0.25em 1em;
 }
 
 /* ezoic cookie accepter */

@@ -37,6 +37,23 @@ body{
 	text-align:left;
 	margin:0 auto 0 auto;
 }
+.main-col {
+  box-sizing: border-box;
+  width: 81%;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 970px;
+  display: inline-block;
+  vertical-align: top;
+}
+.sec-col {
+  box-sizing: border-box;
+  width: 19%;
+  padding-left: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
 body.full #supertop, body.full #top, body.full #main{
   width:96%;
   min-width: 1020px;
@@ -262,7 +279,7 @@ padding-top:10px;
   margin-top:12px;
   margin-bottom:0;
   padding:3px 0 0 30px;
-  background-color:#66000;
+  background-color: #660000;
   background-color: rgba(0,0,0,.3);
 }
 .menu li {
@@ -313,6 +330,9 @@ body:not(.touch) #menu .dialog_tab_selected {
 #top_menu li a{
  padding:3px 10px; 
  color:#fff;
+}
+#top_menu li.--active a{
+ text-decoration: none;
 }
 .menu li a{
  padding: 0 5px 3px 10px;
@@ -420,6 +440,7 @@ a.memb{
   padding:2px 8px;
   font-size:1.2em;
   font-weight:bold;
+  cursor: pointer;
 
   border:none;
   border-radius: 8px;
@@ -443,6 +464,7 @@ a.memb{
 .button[disabled], .button.--disabled {
   background-image: none;
   background-color: #dddddd;
+  cursor: default;
 }
 .smallButton{
   font-size:1em;
@@ -646,6 +668,10 @@ a.subtle{
 .more_holder>a.expanded{
   background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/ui-arrow-down-subtle.gif); /* absolute-url */
 }
+.new-warning{
+  background-color: #fffadc;
+  padding: 0.25em 1em;
+}
 
 /* ezoic cookie accepter */
 .cc_banner p {
@@ -688,4 +714,16 @@ img[src="https://go.ezoic.net/utilcave_com/img/ezoic.png"] {
   padding: 0.3em;
   margin-right: -0.3em;
   cursor: pointer;
+}
+.finder_results p {
+  margin: 0.4em 0;
+}
+.finder_results h3 {
+  margin: 0.3em 0;
+}
+.finder_result { 
+  margin-bottom: 1.6em;
+}
+.finder__add-class {
+  margin-top: 1em;
 }

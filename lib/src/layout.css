@@ -37,6 +37,23 @@ body{
 	text-align:left;
 	margin:0 auto 0 auto;
 }
+.main-col {
+  box-sizing: border-box;
+  width: 81%;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 970px;
+  display: inline-block;
+  vertical-align: top;
+}
+.sec-col {
+  box-sizing: border-box;
+  width: 19%;
+  padding-left: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
 body.full #supertop, body.full #top, body.full #main{
   width:96%;
   min-width: 1020px;

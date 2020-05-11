@@ -9,7 +9,7 @@
   margin-top:12px;
   margin-bottom:0;
   padding:3px 0 0 30px;
-  background-color:#66000;
+  background-color: #660000;
   background-color: rgba(0,0,0,.3);
 }
 .menu li {
@@ -60,6 +60,9 @@ body:not(.touch) #menu .dialog_tab_selected {
 #top_menu li a{
  padding:3px 10px; 
  color:#fff;
+}
+#top_menu li.--active a{
+ text-decoration: none;
 }
 .menu li a{
  padding: 0 5px 3px 10px;
