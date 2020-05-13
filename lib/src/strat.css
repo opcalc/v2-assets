@@ -356,3 +356,7 @@ body .option_selector{
   height: 60vw;
   max-height: 300px;
 }
+
+#current_calc_header {
+  margin-bottom: 0.5em;
+}
