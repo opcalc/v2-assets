@@ -61,6 +61,8 @@
 }
 @media (max-width: 480px) {
   .ad.mob-footer-sticky {
+    background-color: white;
+    border-top: 1px solid lightgray;
     height: fit-content;
     width: 100%;
     background-color: transparent;
