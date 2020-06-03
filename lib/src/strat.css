@@ -202,6 +202,14 @@ body .option_selector{
 .ad.strat{
   float:right;
 }
+.ad.strat-top {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #resultsAd{
   margin-top:20px;
   margin-bottom:20px;
