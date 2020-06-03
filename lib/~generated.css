@@ -746,3 +746,6 @@ img[src="https://go.ezoic.net/utilcave_com/img/ezoic.png"] {
 .finder_results p.finder__add-class {
   margin-top: 1em;
 }
+#tF_expirySelector select {
+  min-width: 8em;
+}
