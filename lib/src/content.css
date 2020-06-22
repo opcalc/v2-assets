@@ -87,6 +87,10 @@ a.memb{
   font-size:1.25em;
   color:#000;
 }
+.readable {
+  font-size: 1.125em;
+  line-height: 162%;
+}
 .loading{
   color:#888;
   padding-right:18px;
