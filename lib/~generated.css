@@ -331,9 +331,10 @@ body:not(.touch) #menu .dialog_tab_selected {
 #top_menu li a{
  padding:3px 10px; 
  color:#fff;
+ text-decoration: none;
 }
 #top_menu li.--active a{
- text-decoration: none;
+ text-decoration: underline;
 }
 .menu li a{
  padding: 0 5px 3px 10px;
