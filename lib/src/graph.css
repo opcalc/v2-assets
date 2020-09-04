@@ -1,5 +1,5 @@
 
-table.graph td.d div, table.graph th.t{
+table.graph td.d div, table.graph th.t {
  min-width:24px;
  position:relative;
 /* background-color:#fff;*/
@@ -9,6 +9,16 @@ table.graph a.subtle{
  white-space: nowrap;
  text-decoration:none;
  margin-left:0;
+}
+table.graph td.pct, table.graph th.pct {
+  white-space: nowrap;
+  font-size:0.8em;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: bold;
+}
+table.graph th.pct{
+  font-size: 0.9em;
 }
 
 table.graph td.four_digit{
