@@ -58,6 +58,9 @@
     clear:left;
     width:100%;
   }
+  .ad.home-square {
+    margin-top:18px;
+  }
 }
 @media (max-width: 480px) {
   .ad.mob-footer-sticky {
