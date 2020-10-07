@@ -368,3 +368,8 @@ body .option_selector{
 #current_calc_header {
   margin-bottom: 0.5em;
 }
+
+.ad.strat-intrapage-mobile{
+  min-height: 280px;
+  margin-bottom: 30px;
+}

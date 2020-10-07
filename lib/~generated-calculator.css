@@ -373,6 +373,10 @@ body .option_selector{
   margin-bottom: 0.5em;
 }
 
+.ad.strat-intrapage-mobile{
+  min-height: 280px;
+  margin-bottom: 30px;
+}
 table.graph td.d div, table.graph th.t {
  min-width:24px;
  position:relative;
