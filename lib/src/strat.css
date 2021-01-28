@@ -14,7 +14,7 @@
 }
 .inputWrapper{
   clear:left;
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
 select.subtle, input.subtle{
@@ -37,7 +37,7 @@ select.subtle-editing, input.subtle-editing{
   cursor: pointer;
   display:block;
   clear:both;
-  margin: 8px 0;
+  margin: 0.8em 0 8px;
   padding: 4px 16px;
 }
 
@@ -62,10 +62,14 @@ label.inputLabel{
  display:block;
  float:left;
  /*height:16px;*/
- padding-top:3px;
+ padding-top:2px;
  padding-bottom:5px;
  clear:left;
  font-size: 0.9rem;
+}
+label.inputLabel.wide {
+  width: auto;
+  margin-right: 0.3em;
 }
 label.lineInput {
   padding: 1em 0 .25em;
