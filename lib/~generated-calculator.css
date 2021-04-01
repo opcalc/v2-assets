@@ -85,7 +85,7 @@ label.lineInput {
 }
 input.input, select.input{
  margin-left:10px;
- padding:0;
+ padding: 1px 2.5px;
  margin-bottom:5px;
  font-size: 0.9rem;
 }
@@ -100,6 +100,9 @@ input.inputInline{
 }
 input.inputNumeric{
  text-align:right;
+}
+input[name="symbol-curPrice"] {
+  margin-right: 0.3em;
 }
 span.input{
  height:24px;

@@ -331,7 +331,7 @@ body.full.transitional #top {
 }
 .transitional #logo {
   display: block;
-  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/logo-transitional-mob.png); /* absolute-url - use resources */
+  background-image: url(/images/logo-transitional-mob.png); /* absolute-url - use resources */
   box-sizing: border-box;
   text-decoration-color: transparent;
   text-decoration: none;
@@ -350,7 +350,7 @@ body.full.transitional #top {
   height: 40px;
 }
 .transitional.full #logo {
-  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/logo-transitional.png); /* absolute-url - use resources */
+  background-image: url(/images/logo-transitional.png); /* absolute-url - use resources */
   background-size: 184px 53px;
   min-width: 178px;
   max-width: 178px;
@@ -751,6 +751,7 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
 }
 .transitional .inputLabel {
   font-size: 0.95rem;
+  width: 7.5em;
 }
 .transitional .submitInputs .button {
   padding-top: 2px;

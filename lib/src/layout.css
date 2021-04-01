@@ -751,6 +751,7 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
 }
 .transitional .inputLabel {
   font-size: 0.95rem;
+  width: 7.5em;
 }
 .transitional .submitInputs .button {
   padding-top: 2px;
