@@ -300,7 +300,7 @@ body.transitional.full, body.transitional.full #main, body.full.transitional #to
   font-size: 21px;
 }
 .transitional h2 {
-  font-size: 16px;
+  font-size: 15px;
 }
 body.full.transitional #top {
   min-height: auto;
@@ -331,7 +331,7 @@ body.full.transitional #top {
 }
 .transitional #logo {
   display: block;
-  background-image: url(/images/logo-transitional-mob.png); /* absolute-url - use resources */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/logo-transitional-mob.png); /* absolute-url - use resources */
   box-sizing: border-box;
   text-decoration-color: transparent;
   text-decoration: none;
@@ -350,7 +350,7 @@ body.full.transitional #top {
   height: 40px;
 }
 .transitional.full #logo {
-  background-image: url(/images/logo-transitional.png); /* absolute-url - use resources */
+  background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/logo-transitional.png); /* absolute-url - use resources */
   background-size: 184px 53px;
   min-width: 178px;
   max-width: 178px;
@@ -900,7 +900,7 @@ font-size:19px;
   padding-bottom:0px;
 }
 h2{
-  font-size:15px;
+  font-size:14.3px;
   color:#A50000;
   font-family: verdana, arial, san-serif;
   padding-bottom:0px;
