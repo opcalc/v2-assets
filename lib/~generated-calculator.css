@@ -19,6 +19,8 @@
 .inputWrapper{
   clear:left;
   margin: 4px 0;
+  display: flex;
+  align-items: baseline;
 }
 
 select.subtle, input.subtle{
@@ -44,7 +46,9 @@ select.subtle-editing, input.subtle-editing{
   margin: 0.8em 0 8px;
   padding: 4px 16px;
 }
-
+[name=graph-priceMax] {
+  margin-right: 0.5em;
+}
 .stratContent h2{
   clear:both;
 }

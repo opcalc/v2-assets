@@ -33,6 +33,7 @@ body{
 
 #main{
 	width:968px;
+  min-height: calc(100vh - 149px - 73px);
 	background-color:#FFFFFF;
 	text-align:left;
 	margin:0 auto 0 auto;
@@ -71,30 +72,32 @@ body.full #menu{
   top:0;
   width:auto;
 }
+body.full.transitional #menu {
+  margin-left: 0;
+}
 body.full #menu #top_but-calculator{
   margin-bottom:0;
 }
-#menu .follow{
-  position:absolute;
+#menu .follow {
+  position: absolute;
   top:3px;
-  right: 0;
+  right: 5px;
   color:#fff;
   font-weight:bold;
+  display: flex;
+  justify-content: flex-end;
+}
+#menu .follow a {
+  display: inline-block;
+  padding-right: 2px;
+  padding-left: 2px;
 }
 #menu .follow p, #menu .follow div{
- float: left;
  margin: 0;
  color: inherit;
 }
-#menu .follow div{
- width:194px;
-}
 #menu .follow a{
  margin-top:-9px;
-}
-#menu .follow a.addthis_button_google_plusone{
- margin-top:-5px;
- width: 38px;
 }
 
 #main_pad{
@@ -102,7 +105,6 @@ body.full #menu #top_but-calculator{
 	margin:0px 10px;
   padding-bottom:10px;
   padding-top:1px;
-  min-height: calc(100vh - 149px - 73px);
 
   display: flex;
   align-items: flex-start;
@@ -253,6 +255,7 @@ padding-top:10px;
 	content: ".";
 	display: block;
 	height: 0;
+	width: 0;
 	clear: both;
 	visibility: hidden;
 }
@@ -270,3 +273,487 @@ padding-top:10px;
   left: 0;
   z-index: 3;
 }
+
+/* Transitional look */
+.classic #logo {
+  display: none;
+} 
+body.transitional {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+body.transitional.full, body.transitional.full #main, body.full.transitional #top {
+  width: 100%;
+}
+.transitional #supertop {
+  margin-top: 0;
+}
+.transitional #supertop > *:first-child {
+  margin-top: 5px;
+}
+.transitional h1, .transitional h2, .transitional h3, .transitional h4 {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.transitional h1 {
+  margin-top: 0.3em;
+  font-size: 21px;
+}
+.transitional h2 {
+  font-size: 16px;
+}
+body.full.transitional #top {
+  min-height: auto;
+}
+@media (max-width: 1400px) {
+  body.full.transitional #top {
+    margin-top: 0;
+  }
+}
+.transitional.full #top {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  justify-content: flex-start;
+  background-position: -8px -8px;
+  /* background-image: none; */
+  /* background: linear-gradient(180deg, #CF0000 0%, #B30000 100%); */
+}
+.transitional.full #menu {
+  flex-grow: 1;
+}
+.transitional.touch #top {
+  background-image: none;
+  background-color: rgba(211, 12, 12);
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+.transitional #logo {
+  display: block;
+  background-image: url(/images/logo-transitional-mob.png); /* absolute-url - use resources */
+  box-sizing: border-box;
+  text-decoration-color: transparent;
+  text-decoration: none;
+  font-size: 22px;
+  letter-spacing: -0.35px;
+  font-weight: 600;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: #070647;
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.97), 1px 1px 2px rgba(255, 255, 255, 0.3);
+  /* mobile styles */
+  min-width: 320px;
+  max-width: 320px;
+  background-size: 320px 40px;
+  padding-left: 32px;
+  padding-top: 7px;
+  height: 40px;
+}
+.transitional.full #logo {
+  background-image: url(/images/logo-transitional.png); /* absolute-url - use resources */
+  background-size: 184px 53px;
+  min-width: 178px;
+  max-width: 178px;
+  height: 55px;
+  border: 1px solid #070647;
+  padding-right: 12px;
+  padding-left: 0;
+  padding-top: 0;
+  padding-top: 4px;
+  line-height: 110%;
+  text-align: right;
+}
+.transitional #logo .hidden {
+  display: none;
+}
+.transitional #logo .line1 {
+  display: block;
+  line-height: 105%;
+}
+.transitional #logo .line2 {
+  display: block;
+  line-height: 105%;
+}
+.transitional.mobile #menu {
+  margin-top: 0;
+}
+.transitional #menu .follow {
+  text-align: right;
+  top: 13px; /*2px;*/
+}
+.transitional #menu .follow p {
+  display: none;
+}
+.transitional #top_menu {
+  margin-top: 0;
+}
+/**
+ * Palette
+ * Dark blue: #0b0b21
+ * Dark grey: #373742
+ * Dark red: #8c1818
+ */
+.transitional.touch #top_menu {
+  background-color: #ad0a0a;
+  padding-top: 7px;
+  padding-bottom: 1px;
+  padding-right: 8px;
+}
+body.full.transitional #top_menu {
+  margin-top: 18px;
+}
+
+@keyframes menuExpand {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.transitional #burgerMenuTrigger {
+  color: white;
+  position: absolute;
+  right: 40px;
+  top: 12px;
+}
+.transitional #burgerMenuTrigger:after, .transitional #burgerMenuTrigger:before {
+  content: '';
+  position: absolute;
+  right: -26px;
+  width: 22px;
+  border-top: 3px solid white;
+}
+@media (max-width: 359px) {
+  .transitional #burgerMenuTrigger .menu-desc {
+    display: none;
+  }
+}
+.transitional #burgerMenuTrigger:after {
+  top: 1px;
+  height: 4px;
+  border-bottom: 3px solid white;
+  z-index: 12;
+}
+.transitional #burgerMenuTrigger._-selected:after {
+  transform: rotate(45deg);
+  transform-origin: 0 1.5px;
+  border-bottom: none;
+  position: fixed;
+  top: 11.5px;
+  right: 12.5px;
+}
+.transitional #top_but-calculator ._close {
+  /* this should be displayed, but just disabling due to interaction incomplete */
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.transitional #burgerMenuTrigger:before {
+  top: 15px;
+  height: 0;
+  border-top: 3px solid white;
+  z-index: 12;
+}
+.transitional #burgerMenuTrigger._-selected:before {
+  transform: rotate(-45deg);
+  transform-origin: 0 1.5px;
+  position: fixed;
+  top: 27px;
+  right: 12px;
+}
+.transitional #burgerMenuDropdown {
+  position: fixed;
+  z-index: 11;
+  top: 0; /* 40px; */
+  right: 0;
+  left: 0;
+  animation-name: menuExpand;
+  animation-duration: 100ms;
+  transform-origin: 50% 0;
+}
+.transitional #burgerMenuDropdown .menu {
+  min-height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  background-color: #0b0b21;
+  margin-top: 0
+}
+.transitional #burgerMenuDropdown .menu li {
+  float: none;
+  font-size: 1.15rem;
+  margin-bottom: 0.3em;
+}
+.transitional #burgerMenuDropdown .menu li a {
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  /* font-size: 1.15rem;
+  margin-bottom: 0.3em; */
+}
+.transitional .ad-ctnr.--mobile-calculation {
+  display: none;
+}
+.transitional #top_menu > li {
+  font-size: 15px;
+  font-family: 'Raleway', Verdana, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.transitional.touch #tab_holder {
+  width: calc(100% + 10px);
+  background-color: #fff;
+  /* box-shadow: 0 -4px 2px -2px inset #00000011, 0 4px 2px -2px inset #00000011; */
+  padding-bottom: 7px;
+  padding-top: 10px;
+  position: relative;
+  overflow: initial;
+}
+.transitional  #tab_holder {
+  margin-left: -10px;
+  padding-left: 10px;
+  width: 168px;
+  background-color: rgb(254, 254, 255);
+  box-shadow: -4px 0 2px -2px inset #00000011;
+}
+.transitional #tab_holder .dialog_tab_selected {
+  background-image: none;
+}
+.transitional #tab_holder .dialog_tab_selected div {
+  background-image: none;
+  background-color: #fff;
+}
+.transitional.full #tab_holder .dialog_tab_selected div {
+  box-shadow: 0 0 3px 0 #00000033;
+}
+.transitional #tab_holder .stratTab {
+  padding-left: 0;
+  width: 100%;
+}
+.transitional #tab_holder .stratTab div {
+  padding-left: 8px;
+  padding-right: 5px;
+}
+.transitional #tab_holder .dialog_tab_selected .tab_fade_top, 
+.transitional #tab_holder .dialog_tab_selected .tab_fade_bot {
+  display: none;
+}
+.transitional #new-link {
+  float: right;
+  display: block;
+  margin-top: calc(0.4rem - 4px);
+  font-size: 15px;
+  margin-left: 0;
+  margin-right: 8px;
+  padding: 4px;
+  margin-top: -4px;
+  /* align-self: flex-end; */
+}
+@media (min-width: 400px) {
+  .transitional #new-link {
+    float: left;
+    margin-left: 0.75em;
+    padding-left: 0.75em;
+  }
+}
+.transitional #new-link .plus-icon {
+  background-color: #339;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 1em;
+  width: 1em;
+  line-height:100%;
+  border-radius: 50%;
+}
+.transitional.touch #current_calc_header {
+  margin-top: 0;
+}
+.transitional #calcs_holder {
+  margin-left: 16px;
+}
+.transitional #home_menu, .transitional #menu #top_but-calculator {
+  background-image: none;
+  background-color: #373742; /* #212228; */
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+.transitional #menu .jq_exclusive_target {
+  margin: 0;
+}
+.transitional.touch #menu .jq_exclusive_target {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.transitional.touch #content_holder {
+  margin-top: 10px;
+}
+
+.transitional #menu #top_but-calculator {
+  position: absolute;
+  top: calc(100% - 13px);
+  z-index: 10;
+  font-size: 0.92rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  animation-name: menuExpand;
+  animation-duration: 100ms;
+  transform-origin: 50% 0;
+}
+.transitional.mobile #tab_holder_tabs {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+.transitional.touch #tab_holder #strat_F_button {
+  display: none;
+}
+.transitional.touch #tab_holder_tabs.--show {
+  display: block;
+}
+.transitional.touch #tab_holder_tabs > ._close,
+.transitional.touch #tab_holder_tabs > .dialog_tab._close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  margin: -8px;
+  padding: 8px;
+  padding-top: 0;
+  margin-top: -12px;
+  font-size: 36px;
+  font-weight: 300;
+  color: #7c8bb3;
+  width: auto;
+}
+.transitional.tablet #tab_holder_tabs {
+  max-width: 300px;
+  position: absolute;
+  top: 34px;
+  margin-top: 5px;
+}
+.transitional.touch #tab_holder ._heading {
+  margin-top: .5em;
+  font-size: 1.15rem;
+}
+.transitional.touch #tab_holder .stratTab {
+  background: none;
+  padding: 0;
+  margin: 0 -4px;
+}
+.transitional.touch #tab_holder .stratTab div {
+  padding: 8px 4px;
+  margin: 0;
+}
+.transitional.touch #tab_holder .stratTab {
+  width: calc(100% + 8px);
+}
+.transitional.touch .stratTab.dialog_tab_selected a, .transitional.touch .dialog_tab_selected .minor {
+  color: black;
+}
+.transitional.touch #menu #top_but-calculator {
+  top: 100%;
+}
+.transitional.mobile [name=underlying-symbol]+.button {
+  padding: 2px 8px;
+}
+.transitional.touch .stratTab a {
+  color: #339;
+}
+.transitional .menu_group h3 {
+  color: #FFD74B;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 130%;
+  margin-bottom: 0.2em;
+  padding-left: 0.2rem;
+  border-bottom: 1px solid #ffffff22;
+}
+.transitional.mobile .menu_group h3 {
+  padding-left: 0.2rem;
+}
+.transitional #home_menu .menu_group h3 {
+  font-size: 1.25rem;
+}
+.transitional #top_menu .menu_group li a {
+  font-size: 16px;
+}
+.transitional #home_menu .menu_group li a {
+  font-size: 18px;
+}
+.transitional .menu .menu li a {
+  padding-left: 0.3rem;
+  line-height: 140%;
+  font-weight: 400;
+  color: #ffffffee;
+  text-decoration-color: #ffffff44;
+}
+.transitional.touch .menu_group {
+  margin-bottom: 10px; 
+}
+.transitional .menu li a:hover {
+  color: #ffffffff;
+  text-decoration-color: #ffffffff;
+
+}
+body.transitional:not(.touch) #menu .dialog_tab_selected {
+  padding-top: initial;
+  background-color: transparent;
+}
+.transitional #top_menu .id-calculator:after {
+  content: '▼';
+  color: white;
+  font-size: 0.5em;
+  position: relative;
+  left: -7px;
+  top: -2px;
+}
+.transitional #top_menu .id-calculator.dialog_tab_selected:after {
+  opacity: 0.6;
+}
+.transitional a.button, .transitional input[type=button].button, .transitional.touch #current_calc_header {
+  padding-left: 1em;
+  padding-right: 1em;
+  /* background-image: none; */
+  /* background-color: #282877; */
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.transitional.touch #current_calc_header {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  background-image: none;
+  background-color: #fff;
+  padding: 6px;
+  margin: -6px;
+  line-height: 130%;
+  font-size: 15px;
+  color: #339;
+  display: block;
+  float: left;
+}
+.transitional.touch #current_calc_header:after {
+  margin-left:2px;
+}
+.transitional #status_messages {
+  border: none;
+}
+.transitional .inputLabel {
+  font-size: 0.95rem;
+}
+.transitional .submitInputs .button {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+/***/

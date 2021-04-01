@@ -62,6 +62,14 @@ body:not(.touch) #menu .dialog_tab_selected {
  color:#fff;
  text-decoration: none;
 }
+#top_menu li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffffff80;
+}
+#top_menu li a:active, #top_menu li a:focus {
+  text-decoration: underline;
+  text-decoration-color: #ffffffFF;
+}
 #top_menu li.--active a{
  text-decoration: underline;
 }
