@@ -731,6 +731,12 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
   font-size: 16px;
   line-height: 24px;
 }
+.transitional a.smallButton, .transitional input[type=button].smallButton {
+  line-height: 18px;
+  font-size: 0.92rem;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
 .transitional.touch #current_calc_header {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   background-image: none;
@@ -756,6 +762,10 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
 .transitional .submitInputs .button {
   padding-top: 2px;
   padding-bottom: 2px;
+}
+.transitional .finder_results h3 {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
 }
 /***/
 #menu {
@@ -933,7 +943,7 @@ a.memb{
  background-color:#fff;
 }
 
-.button, .smallButton{
+.button, .smallButton, .button--outline{
   color:#FFF;
   text-decoration:none;
   padding:2px 8px;
@@ -957,7 +967,14 @@ a.memb{
   -webkit-appearance:none;
   display:block; /* for old ie */
   display:inline-block; /* for newer browsers */
-
+}
+.button--outline {
+  background: none;
+  color: #373742;
+  border: 1px solid #373742;
+}
+a.button--outline:hover, input[type=button].button--outline:hover {
+  background-color: #ececf1;
 }
 .button[disabled], .button.--disabled {
   background-image: none;
@@ -1184,12 +1201,14 @@ a.subtle{
   display: none;
 }
 .breadcrumb a {
+  padding: 6px 0;
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(87, 87, 102, 0.33);
 }
 .breadcrumb a:hover {
   color: inherit;
-  text-decoration: underline;
+  text-decoration-color: rgba(87, 87, 102, 1);
 }
 #supertop .info-box {
     position: relative;
@@ -1266,8 +1285,11 @@ img[src="https://go.ezoic.net/utilcave_com/img/ezoic.png"] {
   margin-bottom: 1.6em;
 }
 .finder_results p.finder__add-class {
-  margin-top: 1em;
+  margin-top: 0.7em;
 }
 #tF_expirySelector select {
   min-width: 8em;
+}
+#strat_F label.disabled {
+  color: #aaa;
 }

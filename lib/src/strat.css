@@ -18,6 +18,9 @@
   display: flex;
   align-items: baseline;
 }
+.inputWrapper.__narrow {
+  margin: 0.5px 0;
+}
 
 select.subtle, input.subtle{
   border:none;
@@ -42,9 +45,6 @@ select.subtle-editing, input.subtle-editing{
   margin: 0.8em 0 8px;
   padding: 4px 16px;
 }
-[name=graph-priceMax] {
-  margin-right: 0.5em;
-}
 .stratContent h2{
   clear:both;
 }
@@ -56,10 +56,19 @@ select.subtle-editing, input.subtle-editing{
 	clear:right;
 }
 input.input[disabled='disabled']{
- background-color:#fff;
- border:none;
- color:#000000;
- text-align:left;
+}
+input.input.appearDisabled:not(:hover) {
+  padding: 2px 3.5px;
+}
+input.input.appearDisabled:not(:hover), select.appearDisabled:not(:hover) {
+  border: 1px solid #aaa;
+  color: #aaa;
+}
+input.inputInvisible, input.inputInvisible.inputNumeric {
+  background-color:#fff;
+  border:none;
+  color:#000000;
+  text-align:left;
 }
 label.inputLabel{
  width:9em;
@@ -82,7 +91,6 @@ label.lineInput {
 input.input, select.input{
  margin-left:10px;
  padding: 1px 2.5px;
- margin-bottom:5px;
  font-size: 0.9rem;
 }
 input.inputWithDollar{
@@ -110,7 +118,6 @@ span.inputReadOnly{
   display:inline;
   float:none;
   clear:none;
-  padding-right:5px;
 }
 
 .submitInputs{

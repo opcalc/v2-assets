@@ -731,6 +731,12 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
   font-size: 16px;
   line-height: 24px;
 }
+.transitional a.smallButton, .transitional input[type=button].smallButton {
+  line-height: 18px;
+  font-size: 0.92rem;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
 .transitional.touch #current_calc_header {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   background-image: none;
@@ -756,5 +762,9 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
 .transitional .submitInputs .button {
   padding-top: 2px;
   padding-bottom: 2px;
+}
+.transitional .finder_results h3 {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
 }
 /***/
