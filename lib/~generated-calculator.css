@@ -64,8 +64,11 @@ input.input[disabled='disabled']{
 input.input.appearDisabled:not(:hover) {
   padding: 2px 3.5px;
 }
+select.appearDisabled {
+  border-color: #ccc;
+}
 input.input.appearDisabled:not(:hover), select.appearDisabled:not(:hover) {
-  border: 1px solid #aaa;
+  border: 1px solid #ccc;
   color: #aaa;
 }
 input.inputInvisible, input.inputInvisible.inputNumeric {
@@ -94,8 +97,9 @@ label.lineInput {
 }
 input.input, select.input {
  margin-left:10px;
- padding: 1px 2.5px;
+ padding: 2px 3.5px;
  font-size: 0.9rem;
+ border: 1px solid #666;
 }
 select.input.subtle {
   margin-left: 5px;

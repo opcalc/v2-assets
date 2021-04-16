@@ -515,7 +515,8 @@ body.full.transitional #top_menu {
   padding-left: 10px;
   width: 168px;
   background-color: rgb(254, 254, 255);
-  box-shadow: -4px 0 2px -2px inset #00000011;
+  -webkit-box-shadow: inset -4px 0 2px -2px #00000011;
+  box-shadow: inset -4px 0 2px -2px #00000011;
 }
 .transitional #tab_holder .dialog_tab_selected {
   background-image: none;
