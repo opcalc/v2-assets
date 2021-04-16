@@ -88,13 +88,20 @@ label.lineInput {
   padding: 1em 0 .25em;
   display: block;
 }
-input.input, select.input{
+input.input, select.input {
  margin-left:10px;
  padding: 1px 2.5px;
  font-size: 0.9rem;
 }
-input.inputWithDollar{
+select.input.subtle {
+  margin-left: 5px;
+  font-size: 0.9rem;
+}
+input.inputWithDollar, .input.noLeftMargin{
  margin-left:2px;
+}
+select.selectPlaceholder {
+  color: #aaa;
 }
 input.inputWithHash{
  margin-left:0;
@@ -129,7 +136,8 @@ span.inputReadOnly{
 }
 
 .element_option_selector{
-  position:relative;
+  padding-left: 8px;
+  position: relative;
 }
 .element_option_selector .options_selector{
   position:absolute;

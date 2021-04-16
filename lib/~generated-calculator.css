@@ -92,13 +92,20 @@ label.lineInput {
   padding: 1em 0 .25em;
   display: block;
 }
-input.input, select.input{
+input.input, select.input {
  margin-left:10px;
  padding: 1px 2.5px;
  font-size: 0.9rem;
 }
-input.inputWithDollar{
+select.input.subtle {
+  margin-left: 5px;
+  font-size: 0.9rem;
+}
+input.inputWithDollar, .input.noLeftMargin{
  margin-left:2px;
+}
+select.selectPlaceholder {
+  color: #aaa;
 }
 input.inputWithHash{
  margin-left:0;
@@ -133,7 +140,8 @@ span.inputReadOnly{
 }
 
 .element_option_selector{
-  position:relative;
+  padding-left: 8px;
+  position: relative;
 }
 .element_option_selector .options_selector{
   position:absolute;
@@ -425,9 +433,6 @@ table.graph td.five_digit{
 }
 table.graph td.four_digit .neg, table.graph td.five_digit .neg{
   font-size:0.85em;
-}
-table.graph td.four_digit:hover{
-  font-size:1em;
 }
 
 table.graph td.d div a, table.graph th.t div a{

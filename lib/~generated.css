@@ -189,7 +189,7 @@ padding-top:10px;
  width:740px;
 }
 .full #content_holder{
-  width:auto;
+  width: calc(100% - 175px);
   max-width: calc(100% - 175px);
 }
 #calcs_holder {
@@ -757,7 +757,7 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
 }
 .transitional .inputLabel {
   font-size: 0.95rem;
-  width: 7.5em;
+  width: 7.9em;
 }
 .transitional .submitInputs .button {
   padding-top: 2px;
@@ -766,6 +766,9 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
 .transitional .finder_results h3 {
   font-family: Lato, Arial, Helvetica, sans-serif;
   font-size: 0.95rem;
+}
+.transitional table.graph td.d div a, .transitional table.graph th.t div a {
+  letter-spacing: -0.10ex;
 }
 /***/
 #menu {

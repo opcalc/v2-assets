@@ -30,9 +30,6 @@ table.graph td.five_digit{
 table.graph td.four_digit .neg, table.graph td.five_digit .neg{
   font-size:0.85em;
 }
-table.graph td.four_digit:hover{
-  font-size:1em;
-}
 
 table.graph td.d div a, table.graph th.t div a{
   color:inherit;
