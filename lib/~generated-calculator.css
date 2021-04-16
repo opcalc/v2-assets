@@ -22,9 +22,6 @@
   display: flex;
   align-items: baseline;
 }
-.inputWrapper.__narrow {
-  margin: 0.5px 0;
-}
 
 select.subtle, input.subtle{
   border:none;
@@ -49,6 +46,9 @@ select.subtle-editing, input.subtle-editing{
   margin: 0.8em 0 8px;
   padding: 4px 16px;
 }
+[name=graph-priceMax] {
+  margin-right: 0.5em;
+}
 .stratContent h2{
   clear:both;
 }
@@ -60,22 +60,10 @@ select.subtle-editing, input.subtle-editing{
 	clear:right;
 }
 input.input[disabled='disabled']{
-}
-input.input.appearDisabled:not(:hover) {
-  padding: 2px 3.5px;
-}
-select.appearDisabled {
-  border-color: #ccc;
-}
-input.input.appearDisabled:not(:hover), select.appearDisabled:not(:hover) {
-  border: 1px solid #ccc;
-  color: #aaa;
-}
-input.inputInvisible, input.inputInvisible.inputNumeric {
-  background-color:#fff;
-  border:none;
-  color:#000000;
-  text-align:left;
+ background-color:#fff;
+ border:none;
+ color:#000000;
+ text-align:left;
 }
 label.inputLabel{
  width:9em;
@@ -95,21 +83,14 @@ label.lineInput {
   padding: 1em 0 .25em;
   display: block;
 }
-input.input, select.input {
+input.input, select.input{
  margin-left:10px;
- padding: 2px 3.5px;
+ padding: 1px 2.5px;
+ margin-bottom:5px;
  font-size: 0.9rem;
- border: 1px solid #666;
 }
-select.input.subtle {
-  margin-left: 5px;
-  font-size: 0.9rem;
-}
-input.inputWithDollar, .input.noLeftMargin{
+input.inputWithDollar{
  margin-left:2px;
-}
-select.selectPlaceholder {
-  color: #aaa;
 }
 input.inputWithHash{
  margin-left:0;
@@ -133,6 +114,7 @@ span.inputReadOnly{
   display:inline;
   float:none;
   clear:none;
+  padding-right:5px;
 }
 
 .submitInputs{
@@ -144,8 +126,7 @@ span.inputReadOnly{
 }
 
 .element_option_selector{
-  padding-left: 8px;
-  position: relative;
+  position:relative;
 }
 .element_option_selector .options_selector{
   position:absolute;

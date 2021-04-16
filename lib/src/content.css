@@ -38,7 +38,7 @@ a.memb{
  background-color:#fff;
 }
 
-.button, .smallButton, .button--outline{
+.button, .smallButton{
   color:#FFF;
   text-decoration:none;
   padding:2px 8px;
@@ -62,14 +62,7 @@ a.memb{
   -webkit-appearance:none;
   display:block; /* for old ie */
   display:inline-block; /* for newer browsers */
-}
-.button--outline {
-  background: none;
-  color: #373742;
-  border: 1px solid #373742;
-}
-a.button--outline:hover, input[type=button].button--outline:hover {
-  background-color: #ececf1;
+
 }
 .button[disabled], .button.--disabled {
   background-image: none;
@@ -296,14 +289,12 @@ a.subtle{
   display: none;
 }
 .breadcrumb a {
-  padding: 6px 0;
   color: inherit;
-  text-decoration: underline;
-  text-decoration-color: rgba(87, 87, 102, 0.33);
+  text-decoration: none;
 }
 .breadcrumb a:hover {
   color: inherit;
-  text-decoration-color: rgba(87, 87, 102, 1);
+  text-decoration: underline;
 }
 #supertop .info-box {
     position: relative;

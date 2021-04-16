@@ -8,11 +8,8 @@
   margin-bottom: 1.6em;
 }
 .finder_results p.finder__add-class {
-  margin-top: 0.7em;
+  margin-top: 1em;
 }
 #tF_expirySelector select {
   min-width: 8em;
-}
-#strat_F label.disabled {
-  color: #aaa;
 }
