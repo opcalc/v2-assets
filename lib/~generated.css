@@ -189,7 +189,7 @@ padding-top:10px;
  width:740px;
 }
 .full #content_holder{
-  width:auto;
+  width: calc(100% - 175px);
   max-width: calc(100% - 175px);
 }
 #calcs_holder {
@@ -515,7 +515,8 @@ body.full.transitional #top_menu {
   padding-left: 10px;
   width: 168px;
   background-color: rgb(254, 254, 255);
-  box-shadow: -4px 0 2px -2px inset #00000011;
+  -webkit-box-shadow: inset -4px 0 2px -2px #00000011;
+  box-shadow: inset -4px 0 2px -2px #00000011;
 }
 .transitional #tab_holder .dialog_tab_selected {
   background-image: none;
@@ -731,6 +732,12 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
   font-size: 16px;
   line-height: 24px;
 }
+.transitional a.smallButton, .transitional input[type=button].smallButton {
+  line-height: 18px;
+  font-size: 0.92rem;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
 .transitional.touch #current_calc_header {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   background-image: none;
@@ -751,7 +758,7 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
 }
 .transitional .inputLabel {
   font-size: 0.95rem;
-  width: 7.5em;
+  width: 7.9em;
 }
 .transitional .submitInputs .button {
   padding-top: 2px;
@@ -841,7 +848,7 @@ body:not(.touch) #menu .dialog_tab_selected {
  text-decoration: underline;
 }
 .menu li a{
- padding: 0 5px 3px 5px;
+ padding: 0 5px 3px 10px;
  color:#fff;
 }
 /*.menu li a.access-member{
@@ -868,10 +875,10 @@ body:not(.touch) #menu .dialog_tab_selected {
   width:21%;
 }
 #strats-spreads_wrapper, #info-spreads_wrapper{
-  width:21%;
+  width:20%;
 }
 #strats-advanced_wrapper, #info-advanced_wrapper{
-  width:32%;
+  width:33%;
 }
 #strats-custom_wrapper, #info-custom_wrapper{
   width:25%;
@@ -885,8 +892,8 @@ body:not(.touch) #menu .dialog_tab_selected {
 .menu_group h3{
  color:#ff8;
  margin:0;
- padding-left:5px;
- width: calc(100% - 5px);
+ padding-left:3%;
+ width:97%;
  font-size:1em;
  border-bottom:1px solid #ff8;
 }
@@ -940,7 +947,7 @@ a.memb{
  background-color:#fff;
 }
 
-.button, .smallButton{
+.button, .smallButton, .button--outline{
   color:#FFF;
   text-decoration:none;
   padding:2px 8px;
@@ -964,7 +971,14 @@ a.memb{
   -webkit-appearance:none;
   display:block; /* for old ie */
   display:inline-block; /* for newer browsers */
-
+}
+.button--outline {
+  background: none;
+  color: #373742;
+  border: 1px solid #373742;
+}
+a.button--outline:hover, input[type=button].button--outline:hover {
+  background-color: #ececf1;
 }
 .button[disabled], .button.--disabled {
   background-image: none;
@@ -1191,12 +1205,14 @@ a.subtle{
   display: none;
 }
 .breadcrumb a {
+  padding: 6px 0;
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: rgba(87, 87, 102, 0.33);
 }
 .breadcrumb a:hover {
   color: inherit;
-  text-decoration: underline;
+  text-decoration-color: rgba(87, 87, 102, 1);
 }
 #supertop .info-box {
     position: relative;
@@ -1273,8 +1289,11 @@ img[src="https://go.ezoic.net/utilcave_com/img/ezoic.png"] {
   margin-bottom: 1.6em;
 }
 .finder_results p.finder__add-class {
-  margin-top: 1em;
+  margin-top: 0.7em;
 }
 #tF_expirySelector select {
   min-width: 8em;
+}
+#strat_F label.disabled {
+  color: #aaa;
 }
