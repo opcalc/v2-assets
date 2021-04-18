@@ -74,7 +74,7 @@ body:not(.touch) #menu .dialog_tab_selected {
  text-decoration: underline;
 }
 .menu li a{
- padding: 0 5px 3px 10px;
+ padding: 0 5px 3px 5px;
  color:#fff;
 }
 /*.menu li a.access-member{
@@ -101,10 +101,10 @@ body:not(.touch) #menu .dialog_tab_selected {
   width:21%;
 }
 #strats-spreads_wrapper, #info-spreads_wrapper{
-  width:20%;
+  width:21%;
 }
 #strats-advanced_wrapper, #info-advanced_wrapper{
-  width:33%;
+  width:32%;
 }
 #strats-custom_wrapper, #info-custom_wrapper{
   width:25%;
@@ -118,8 +118,8 @@ body:not(.touch) #menu .dialog_tab_selected {
 .menu_group h3{
  color:#ff8;
  margin:0;
- padding-left:3%;
- width:97%;
+ padding-left:5px;
+ width: calc(100% - 5px);
  font-size:1em;
  border-bottom:1px solid #ff8;
 }
