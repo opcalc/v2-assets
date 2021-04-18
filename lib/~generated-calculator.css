@@ -95,7 +95,7 @@ label.lineInput {
   padding: 1em 0 .25em;
   display: block;
 }
-input.input, select.input {
+input.input, select.input:not(.subtle) {
  margin-left:10px;
  padding: 2px 3.5px;
  font-size: 0.9rem;
@@ -105,7 +105,7 @@ select.input.subtle {
   margin-left: 5px;
   font-size: 0.9rem;
 }
-input.inputWithDollar, .input.noLeftMargin{
+input.inputWithDollar, .input.noLeftMargin, .input.noLeftMargin:not(.subtle) {
  margin-left:2px;
 }
 select.selectPlaceholder {
