@@ -328,6 +328,7 @@ body.full.transitional #top {
   border: none;
   position: relative;
   z-index: 1;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 .transitional #logo {
   display: block;
@@ -387,6 +388,12 @@ body.full.transitional #top {
 .transitional #top_menu {
   margin-top: 0;
 }
+.transitional #top_menu li a {
+  padding: 3px 8px;
+}
+.transitional #top_menu li#id-calculator a {
+  padding-right: 11px;
+}
 /**
  * Palette
  * Dark blue: #0b0b21
@@ -397,7 +404,7 @@ body.full.transitional #top {
   background-color: #ad0a0a;
   padding-top: 7px;
   padding-bottom: 1px;
-  padding-right: 8px;
+  padding-left: 0;
 }
 body.full.transitional #top_menu {
   margin-top: 18px;
@@ -506,7 +513,7 @@ body.full.transitional #top_menu {
   background-color: #fff;
   /* box-shadow: 0 -4px 2px -2px inset #00000011, 0 4px 2px -2px inset #00000011; */
   padding-bottom: 7px;
-  padding-top: 10px;
+  padding-top: 16px;
   position: relative;
   overflow: initial;
 }
