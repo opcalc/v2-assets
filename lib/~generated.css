@@ -668,6 +668,9 @@ body.full.transitional #top_menu {
 .transitional.touch .stratTab.dialog_tab_selected a, .transitional.touch .dialog_tab_selected .minor {
   color: black;
 }
+.transitional.touch #menu {
+  margin-top: 0;
+}
 .transitional.touch #menu #top_but-calculator {
   top: 100%;
 }
