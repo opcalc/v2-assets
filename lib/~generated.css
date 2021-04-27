@@ -168,7 +168,7 @@ padding-top:10px;
 #tab_holder_tabs{
  list-style-type:none;
  padding:0;
- margin-top: 0.5em;
+ margin-top: 0.3em;
 }
 #tab_holder{
  padding:0;
@@ -622,9 +622,6 @@ body.full.transitional #top_menu {
   border-radius: 0;
   margin-bottom: 0;
   padding-bottom: 30px;
-}
-.transitional.touch #tab_holder #strat_F_button {
-  display: none;
 }
 .transitional.touch #tab_holder_tabs.--show {
   display: block;
@@ -1148,10 +1145,24 @@ color:#fff;
   padding-left: 0;
 }
 
+#tab_holder {
+  padding-top: 0.5em;
+}
 #tab_holder .dialog_tab#strat_F_button a {
   font-weight: bold;
   text-decoration: none;
-  color: #2b2b84
+  color: #2b2b84;
+  text-decoration: underline;
+  text-decoration-color: #2b2b8433;
+}
+#tab_holder .dialog_tab.dialog_tab_selected#strat_F_button a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #2b2b84;
+  text-decoration: none;
+}
+#tab_holder .dialog_tab#strat_F_button:hover a {
+  text-decoration-color: currentColor;
 }
 
 .new-tag {

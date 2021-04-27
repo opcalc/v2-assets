@@ -104,9 +104,12 @@
   grid-row-gap: 3px;
   border-radius: 3px; }
 
-  .touch #tab_holder_tabs.--show {
-    display: -ms-grid;
-    display: grid;
+.touch #tab_holder_tabs.--show {
+  display: -ms-grid;
+  display: grid;
+}
+.touch #tab_holder .dialog_tab {
+  width: auto;
 }
 .touch #tab_holder .stratTab{
   width: 100%;
@@ -135,6 +138,9 @@
   -webkit-appearance:none;
   display:block; /* for old ie */
   display:inline-block; /* for newer browsers */
+}
+.touch #tab_holder .stratTab#strat_F_button {
+  display: none;
 }
 .touch #tab_holder .dialog_tab_selected{
   background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/button-bg-blu-mid.gif'); /* absolute-url */
@@ -240,4 +246,12 @@ body.mobile{
   position:absolute;
   display:block;
   left: auto;
+}
+.touch .main-col {
+  width: auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.touch #strat_F_button {
+  display: none;
 }

@@ -400,13 +400,15 @@ body .option_selector{
 }
 
 #current_calc_header {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
+  margin-top: 0.4em;
 }
 
 .ad.strat-intrapage-mobile{
   min-height: 280px;
   margin-bottom: 30px;
 }
+
 table.graph td.d div, table.graph th.t {
  min-width:24px;
  position:relative;
