@@ -243,6 +243,7 @@ body .option_selector{
 #resultsAd{
   margin-top:20px;
   margin-bottom:20px;
+  min-height: 250px;
 }
 .summary .showResultsBut, .summary .loading-wrapper {
   text-align:center;
@@ -400,7 +401,8 @@ body .option_selector{
   margin-top: 0.4em;
 }
 
+.ad.results-mobile,
 .ad.strat-intrapage-mobile{
-  min-height: 280px;
+  min-height: 315px; /* Seems to happen a bit */
   margin-bottom: 30px;
 }
