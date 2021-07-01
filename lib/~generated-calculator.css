@@ -566,6 +566,31 @@ table.graph td.d div.overlay{
   box-shadow: 4px 4px 6px rgba(0,0,0,0.5);
 }
 
+.weeklyIndicator {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  top: 1px;
+  margin-left: 1px;
+  font-size: 0.8rem;
+  width: 1em;
+  height: 1em;
+  color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.weeklyIndicator:after {
+  content: "w";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  font-size:0.8em;
+  height: 100%;
+  width: 100%;
+  color: #999
+}
+
 /* *** Numerics *** */
 
 .maxRisk{background-color: #800; color:#f66}
