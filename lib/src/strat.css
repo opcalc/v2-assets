@@ -1,7 +1,7 @@
 /** Strategy-specific **/
 .strat-info{
   width:385px;
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
 }
 .full .strat-info{
   min-width:385px;
@@ -116,7 +116,7 @@ input.inputInline{
 input.inputNumeric{
  text-align:right;
 }
-input[name="symbol-curPrice"] {
+input[name="symbol-curPrice"], input[name="underlying-curPrice"] {
   margin-right: 0.3em;
 }
 span.input{
