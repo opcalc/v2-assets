@@ -508,7 +508,7 @@ body.full.transitional #top_menu {
   font-family: 'Raleway', Verdana, Helvetica, sans-serif;
   font-weight: 500;
 }
-.transitional.touch #tab_holder {
+body .touch #tab_holder {
   width: calc(100% + 10px);
   background-color: #fff;
   /* box-shadow: 0 -4px 2px -2px inset #00000011, 0 4px 2px -2px inset #00000011; */
@@ -517,37 +517,37 @@ body.full.transitional #top_menu {
   position: relative;
   overflow: initial;
 }
-.transitional  #tab_holder {
+body.full #tab_holder {
   margin-left: -10px;
   padding-left: 10px;
-  width: 168px;
+  width: 174px;
   background-color: rgb(254, 254, 255);
   -webkit-box-shadow: inset -4px 0 2px -2px #00000011;
   box-shadow: inset -4px 0 2px -2px #00000011;
 }
-.transitional #tab_holder .dialog_tab_selected {
+body #tab_holder .dialog_tab_selected {
   background-image: none;
 }
-.transitional #tab_holder .dialog_tab_selected div {
+body #tab_holder .dialog_tab_selected div {
   background-image: none;
   background-color: #fff;
 }
-.transitional.full #tab_holder .dialog_tab_selected div {
+body.full #tab_holder .dialog_tab_selected div {
   box-shadow: 0 0 3px 0 #00000033;
 }
-.transitional #tab_holder .stratTab {
+body #tab_holder .stratTab {
   padding-left: 0;
   width: 100%;
 }
-.transitional #tab_holder .stratTab div {
+body #tab_holder .stratTab div {
   padding-left: 8px;
   padding-right: 5px;
 }
-.transitional #tab_holder .dialog_tab_selected .tab_fade_top, 
-.transitional #tab_holder .dialog_tab_selected .tab_fade_bot {
+body #tab_holder .dialog_tab_selected .tab_fade_top, 
+body #tab_holder .dialog_tab_selected .tab_fade_bot {
   display: none;
 }
-.transitional #new-link {
+body #new-link {
   float: right;
   display: block;
   margin-top: calc(0.4rem - 4px);
@@ -559,13 +559,13 @@ body.full.transitional #top_menu {
   /* align-self: flex-end; */
 }
 @media (min-width: 400px) {
-  .transitional #new-link {
+  body #new-link {
     float: left;
     margin-left: 0.75em;
     padding-left: 0.75em;
   }
 }
-.transitional #new-link .plus-icon {
+body #new-link .plus-icon {
   background-color: #339;
   color: white;
   display: inline-flex;
@@ -576,10 +576,10 @@ body.full.transitional #top_menu {
   line-height:100%;
   border-radius: 50%;
 }
-.transitional.touch #current_calc_header {
+body.touch #current_calc_header {
   margin-top: 0;
 }
-.transitional #calcs_holder {
+body #calcs_holder {
   margin-left: 16px;
 }
 .transitional #home_menu, .transitional #menu #top_but-calculator {
@@ -597,7 +597,7 @@ body.full.transitional #top_menu {
   padding-left: 12px;
   padding-right: 12px;
 }
-.transitional.touch #content_holder {
+body.touch #content_holder {
   margin-top: 10px;
 }
 
@@ -611,7 +611,7 @@ body.full.transitional #top_menu {
   animation-duration: 100ms;
   transform-origin: 50% 0;
 }
-.transitional.mobile #tab_holder_tabs {
+body.mobile #tab_holder_tabs {
   position: fixed;
   top: 0;
   right: 0;
@@ -623,11 +623,11 @@ body.full.transitional #top_menu {
   margin-bottom: 0;
   padding-bottom: 30px;
 }
-.transitional.touch #tab_holder_tabs.--show {
+body.touch #tab_holder_tabs.--show {
   display: block;
 }
-.transitional.touch #tab_holder_tabs > ._close,
-.transitional.touch #tab_holder_tabs > .dialog_tab._close {
+body.touch #tab_holder_tabs > ._close,
+body.touch #tab_holder_tabs > .dialog_tab._close {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -640,29 +640,29 @@ body.full.transitional #top_menu {
   color: #7c8bb3;
   width: auto;
 }
-.transitional.tablet #tab_holder_tabs {
+body.tablet #tab_holder_tabs {
   max-width: 300px;
   position: absolute;
   top: 34px;
   margin-top: 5px;
 }
-.transitional.touch #tab_holder ._heading {
+body.touch #tab_holder ._heading {
   margin-top: .5em;
   font-size: 1.15rem;
 }
-.transitional.touch #tab_holder .stratTab {
+body.touch #tab_holder .stratTab {
   background: none;
   padding: 0;
   margin: 0 -4px;
 }
-.transitional.touch #tab_holder .stratTab div {
+body.touch #tab_holder .stratTab div {
   padding: 8px 4px;
   margin: 0;
 }
-.transitional.touch #tab_holder .stratTab {
+body.touch #tab_holder .stratTab {
   width: calc(100% + 8px);
 }
-.transitional.touch .stratTab.dialog_tab_selected a, .transitional.touch .dialog_tab_selected .minor {
+body.touch .stratTab.dialog_tab_selected a, .touch .dialog_tab_selected .minor {
   color: black;
 }
 .transitional.touch #menu {
@@ -674,7 +674,7 @@ body.full.transitional #top_menu {
 .transitional.mobile [name=underlying-symbol]+.button {
   padding: 2px 8px;
 }
-.transitional.touch .stratTab a {
+.touch .stratTab a {
   color: #339;
 }
 .transitional .menu_group h3 {
@@ -714,11 +714,11 @@ body.full.transitional #top_menu {
   text-decoration-color: #ffffffff;
 
 }
-body.transitional:not(.touch) #menu .dialog_tab_selected {
+body:not(.touch) #menu .dialog_tab_selected {
   padding-top: initial;
   background-color: transparent;
 }
-.transitional #top_menu .id-calculator:after {
+ #top_menu .id-calculator:after {
   content: '▼';
   color: white;
   font-size: 0.5em;
@@ -726,27 +726,28 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
   left: -7px;
   top: -2px;
 }
-.transitional #top_menu .id-calculator.dialog_tab_selected:after {
+#top_menu .id-calculator.dialog_tab_selected:after {
   opacity: 0.6;
 }
-.transitional a.button, .transitional input[type=button].button, .transitional.touch #current_calc_header {
+body a.button, body input[type=button].button, body.touch #current_calc_header {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   padding-left: 1em;
   padding-right: 1em;
   /* background-image: none; */
   /* background-color: #282877; */
   border-radius: 6px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14.4px;
   line-height: 24px;
 }
-.transitional a.smallButton, .transitional input[type=button].smallButton {
+body a.smallButton, body input[type=button].smallButton {
   line-height: 18px;
   font-size: 0.92rem;
   padding-left: 0.8em;
   padding-right: 0.8em;
 }
-.transitional.touch #current_calc_header {
-  font-family: 'Lato', Arial, Helvetica, sans-serif;
+body.touch #current_calc_header {
+  /* font-family: Verdana, Arial, Helvetica, sans-serif; */
   background-image: none;
   background-color: #fff;
   padding: 6px;
@@ -757,10 +758,10 @@ body.transitional:not(.touch) #menu .dialog_tab_selected {
   display: block;
   float: left;
 }
-.transitional.touch #current_calc_header:after {
+body.touch #current_calc_header:after {
   margin-left:2px;
 }
-.transitional #status_messages {
+body #status_messages {
   border: none;
 }
 .transitional .inputLabel {
@@ -1006,6 +1007,10 @@ a.button--outline:hover, input[type=button].button--outline:hover {
   font-size:.9em;
   color:#666;
 }
+.minor2 {
+  font-size: 0.75em;
+  color: #aaa;
+}
 .xminor{
   font-size:.75em;
   margin-bottom: .2em;
@@ -1089,6 +1094,19 @@ input.field_error{
   background-color: #eeeef3;
   border-radius: 3px;
 }
+.card {
+  background-color: white;
+  -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+  -webkit-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-radius: 5px;
+  padding: 0.5rem 0.67rem;
+}
 .close_x{
   text-indent:-5000px;
 
@@ -1110,6 +1128,16 @@ input.field_error{
 .jq_start_hidden{
   display: none;
 }
+
+.mobile .hideMobile,
+.tablet .hideTabPlus, .full .hideTabPlus {
+  display: none;
+}
+
+.fieldLabel {
+  display: flex;
+  flex-direction: column;
+} 
 
 /** other **/
 /*
