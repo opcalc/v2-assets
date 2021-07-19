@@ -141,12 +141,6 @@ body.mobile{
   font-size:1em;
   white-space: nowrap;
 }
-.mobile .results > .graph {
-  margin-left: -10px;
-  margin-right: -10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
 /* !!! #menu top should be margin-top ??? or ie reason its not
  tab_holder ... * { width: auto }

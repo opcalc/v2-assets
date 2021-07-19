@@ -90,10 +90,6 @@ a.button--outline:hover, input[type=button].button--outline:hover {
   font-size:.9em;
   color:#666;
 }
-.minor2 {
-  font-size: 0.75em;
-  color: #aaa;
-}
 .xminor{
   font-size:.75em;
   margin-bottom: .2em;
@@ -177,19 +173,6 @@ input.field_error{
   background-color: #eeeef3;
   border-radius: 3px;
 }
-.card {
-  background-color: white;
-  -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
-  -webkit-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  border-radius: 5px;
-  padding: 0.5rem 0.67rem;
-}
 .close_x{
   text-indent:-5000px;
 
@@ -211,16 +194,6 @@ input.field_error{
 .jq_start_hidden{
   display: none;
 }
-
-.mobile .hideMobile,
-.tablet .hideTabPlus, .full .hideTabPlus {
-  display: none;
-}
-
-.fieldLabel {
-  display: flex;
-  flex-direction: column;
-} 
 
 /** other **/
 /*

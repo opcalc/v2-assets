@@ -20,31 +20,6 @@ table.graph td.pct, table.graph th.pct {
 table.graph th.pct{
   font-size: 0.9em;
 }
-.graphVisTypeIcon {
-  height: 24px;
-  width: 24px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-  padding: 3px;
-  box-sizing: border-box;
-  cursor: pointer;
-  border: none;
-  margin-right: 2px;
-}
-
-.graphVisTypeIcon:not(.__active):hover {
-    background-color: #33333311;
-}
-.graphVisTypeIcon.__active {
-    background-color: #e4eafb;
-    color: #2b49df
-}
-.graphVisTypeIcon svg {
-  max-width: 100%;
-  max-height: 100%;
-}
 
 table.graph td.four_digit{
   font-size:0.88em;
