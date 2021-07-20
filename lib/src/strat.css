@@ -60,6 +60,9 @@ input.input[disabled='disabled']{
 input.input.appearDisabled:not(:hover) {
   padding: 2px 3.5px;
 }
+select {
+  background-color: transparent;
+} 
 select.appearDisabled {
   border-color: #ccc;
 }
@@ -82,6 +85,12 @@ label.inputLabel{
  padding-bottom:5px;
  clear:left;
  font-size: 0.9rem;
+}
+.inputLabelSmall {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: #444;
+  padding-bottom: 0.3em;
 }
 label.inputLabel.wide {
   width: auto;
@@ -132,7 +141,6 @@ span.inputReadOnly{
 }
 
 .submitInputs{
-  padding-top:1em;
 }
 
 .more_holder{
@@ -261,9 +269,6 @@ body .option_selector{
   display:inline-block;
   margin:1em 0 0;
 }
-.summary h3:before{
-  content:" - ";
-}
 
 /** sharing **/
 .shareHolder{
@@ -361,6 +366,10 @@ body .option_selector{
   margin-top: 25px;
   overflow-y: auto;
   padding-bottom: 17px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .ad-ctnr.--mobile-calculation {
@@ -404,5 +413,69 @@ body .option_selector{
 .ad.results-mobile,
 .ad.strat-intrapage-mobile{
   min-height: 315px; /* Seems to happen a bit */
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.id--ivChangePanel .ivSlider__notch {
+  font-size: 0.6rem;
+  flex-basis: 12%;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.id--ivChangePanel .ivSlider__notch > .linkSubtle {
+  border-bottom: none;
+}
+.id--ivChangePanel .ivSlider__notch > .linkSubtle:hover {
+  border-bottom: 1px dashed #339;
+}
+.id--ivChangePanel .ivSlider__notch:after {
+  content: '';
+  bottom: calc(-1.1em - 3px);
+  height: 5px;
+  left: 50%;
+  border-left: 1px solid #aaa;
+  position: absolute;
+}
+.id--ivChangePanel .ivSlider__notch.ivSlider__notch--large:after {
+  bottom: calc(-1.1em - 5px);
+  height: 9px;
+}
+.id--ivChangePanel .ivSlider__notch--has-negative {
+
+}
+.id--ivChangePanel .ivSlider__notch--has-positive {
+  
+}
+.id--ivChangePanel .ivSlider__notch--has-percent {
+  
+}
+.id--ivChangePanel .ivSlider__notch__plusMinusIndicator {
+  font-size: 80%;
+}
+.id--ivChangePanel .ivSlider__notch-ctnr {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -0.85em;
+  margin-right: -0.85em;
+  margin-bottom: 5px;
+}
+.id--ivChangePanel .ivSlider__holder {
+  border: none;
+  position: relative;   
+  margin: 0 0 0.5rem 0;
+  background-color: transparent;
+}
+.id--ivChangePanel .ivSlider__holder:after {
+  border-top: 1px solid #aaa;
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+.id--ivChangePanel .ivSlider__ctnr {
+  margin-top: 0.65em;
+  padding: 0 15px;
 }
