@@ -88,7 +88,7 @@ a.button--outline:hover, input[type=button].button--outline:hover {
 
 .minor{
   font-size:.9em;
-  color:#666;
+  color:#505050;
 }
 .minor2 {
   font-size: 0.75em;
@@ -131,7 +131,7 @@ color:#ffb;
 font-weight:bold;
 }
 .txt_error{
-  color:#900;
+  color:#dd0000;
 }
 
 .field_error{
@@ -169,7 +169,7 @@ input.field_error{
   box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 }
 .msg{
-  padding:.25em 1em;
+  padding:.5em 1em;
   position:relative;
 }
 .panel {
@@ -215,6 +215,16 @@ input.field_error{
 .mobile .hideMobile,
 .tablet .hideTabPlus, .full .hideTabPlus {
   display: none;
+}
+@media (max-width: 340px) {
+  .hide-mob-small {
+    display: none;
+  }
+}
+@media (min-width: 341px) {
+  .hide-mob-small-plus {
+    display: none;
+  }
 }
 
 .fieldLabel {
@@ -333,9 +343,9 @@ a.subtle, .linkSubtle{
   font-size:0.8rem;
   margin: 0;
 }
-.mobile .breadcrumb {
+/* .mobile .breadcrumb {
   display: none;
-}
+} */
 .breadcrumb a {
   padding: 6px 0;
   color: inherit;

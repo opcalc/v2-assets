@@ -1,4 +1,3 @@
-
 table.graph td.d div, table.graph th.t {
  min-width:24px;
  position:relative;
@@ -155,7 +154,7 @@ table.graph td.d div.overlay{
   padding-right: 3px;
 }
 .trade_summary{
-  font-size:1.1em;
+  font-size:0.85rem;
   white-space: nowrap;
 }
 .trade_summary .subtotal td{
@@ -168,8 +167,11 @@ table.graph td.d div.overlay{
 .trade_summary td{
   padding-left:1em;
 }
-.trade_summary td:first{
-  padding-left:0;
+.trade_summary td:first-child, .trade_summary th:first-child{
+  padding-left:5px;
+}
+.trade_summary td:last-child, .trade_summary th:last-child{
+  padding-right:5px;
 }
 .trade_summary th{
   border-bottom:1px solid #666;
@@ -280,4 +282,36 @@ td.d:last-child, th.t:last-child {
 th.t:last-child {
   background: dimgray;
   color: white;
+}
+
+/* table border */
+table.graph tr th:first-child {
+  border-left: 1px solid #e3e3e3 !important;
+  padding-left: 3px;  
+  padding-right: 3px;
+}
+table.graph tr th:last-child, table.graph tr td:last-child {
+  border-right: 1px solid #e3e3e3 !important;
+  padding-left: 3px;  
+  padding-right: 3px;
+}
+
+table.graph tr:nth-child(1) td,
+table.graph tr:nth-child(1) th {
+  border-top: 1px solid #e3e3e3 !important;
+}
+table.graph tr:last-child td,
+table.graph tr:last-child th,
+table.graph tr:nth-child(2) td,
+table.graph tr:nth-child(2) th  {
+  border-bottom: 1px solid #e3e3e3 !important;
+}
+table.graph tr:nth-child(1) td, table.graph tr:nth-child(1) th {
+  border-top: 1px solid #e3e3e3 !important;
+}
+table.graph tr > th:first-child {
+  position: sticky;
+  left: -10px;
+  background-color: white;
+  z-index: 2;
 }

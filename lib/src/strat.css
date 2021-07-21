@@ -48,6 +48,9 @@ select.subtle-editing, input.subtle-editing{
 .stratContent h2{
   clear:both;
 }
+.stratContent h1{
+  margin-top: 0.3em;
+}
 .element{
   margin-bottom:2em;
 }
@@ -91,6 +94,12 @@ label.inputLabel{
   text-transform: uppercase;
   color: #444;
   padding-bottom: 0.3em;
+  min-height: 1rem;
+  display: flex;
+  align-items: center;
+}
+.inputLabelSmall .help {
+  margin-left: 5px;
 }
 label.inputLabel.wide {
   width: auto;
@@ -239,6 +248,8 @@ body .option_selector{
 }
 .ad.strat{
   float:right;
+  position: sticky;
+  top: 5px;
 }
 .ad.strat-top {
   padding-top: 0.5rem;
@@ -253,6 +264,10 @@ body .option_selector{
   margin-bottom:20px;
   min-height: 250px;
 }
+.summary {
+  display: inline-flex;
+  flex-direction: column;
+}
 .summary .showResultsBut, .summary .loading-wrapper {
   text-align:center;
   display:block;
@@ -262,7 +277,7 @@ body .option_selector{
  font-size:1.5em;
 }
 .summary p {
-  margin: .5em 0;
+  margin: .5em 0 0;
 }
 
 .summary h2, .summary h3{
@@ -364,8 +379,11 @@ body .option_selector{
 /** graph **/
 .results > .graph {
   margin-top: 25px;
-  overflow-y: auto;
   padding-bottom: 17px;
+}
+.results .graphCtnr {
+  overflow-x: auto;
+  overflow-y: hidden;
   margin-left: -10px;
   margin-right: -10px;
   padding-left: 10px;
@@ -478,4 +496,13 @@ body .option_selector{
 .id--ivChangePanel .ivSlider__ctnr {
   margin-top: 0.65em;
   padding: 0 15px;
+}
+.id--input-graphType {
+  max-width: calc(100vw - 12.7em);
+}
+.ui-dialog-titlebar-close {
+  z-index: 99;
+}
+.google_chart_holder {
+  min-width: 500px;
 }
