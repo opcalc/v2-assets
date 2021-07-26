@@ -174,7 +174,6 @@ padding-top:10px;
  padding:0;
  margin:0;
  width: 170px;
- padding-bottom: 200px;
  overflow: hidden;
  position:relative;
 }
@@ -524,6 +523,8 @@ body.full #tab_holder {
   background-color: rgb(254, 254, 255);
   -webkit-box-shadow: inset -4px 0 2px -2px #00000011;
   box-shadow: inset -4px 0 2px -2px #00000011;
+  z-index: 99;
+  min-height: 100vh;
 }
 body #tab_holder .dialog_tab_selected {
   background-image: none;
@@ -1540,9 +1541,9 @@ span.inputReadOnly{
 }
 
 /** options selector **/
-body .option_selector{
+body.mobile .option_selector {
   overflow-y:scroll;
-  height:300px;
+  height: calc(100% - 30px) !important;
 }
 .options_set{
   display:none;
@@ -1565,9 +1566,31 @@ body .option_selector{
   color: #444;
 }
 
+.option_selector__inner {
+  padding: 0 0.6rem;
+}
+
 .option_selector table{
   margin-top:.5em;
   border:1px solid #666;
+  position: relative;
+}
+.option_selector table:after {
+  content: '';
+  width: 0.6em;
+  height: 5px;
+  display: block;
+  position: absolute;
+  right: -0.6em;
+}
+.options_set.options_set_active table tr:nth-child(1) th {
+  position: sticky;
+  top: -3px;
+
+}
+.options_set.options_set_active table tr:nth-child(2) th {
+  position: sticky;
+  top: 15px;
 }
 
 .option_selector tr.type th, .option_selector tr.cols th{
@@ -2022,17 +2045,69 @@ table.graph td.d div.overlay{
   z-index:4;
 }*/
 
+.mobile .dialog-optionSelector {
+  bottom: 0 !important;
+  top: 0 !important;
+}
+
 .detailPopup .ui-dialog-content {
   padding-left: 3px;
   padding-right: 3px;
 }
+body.mobile .detailPopup {
+  bottom: 0 !important;
+  top: auto !important;
+}
+.ui-dialog .ui-dialog-titlebar {
+  padding: 0.3em .5em;
+  margin-left: -2px;
+  margin-top: -2px;
+  margin-right: -2px;
+}
+
+.ui-dialog .ui-dialog-content {
+  padding-top: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  background-color: transparent;  
+  border: none;
+  padding: 0;
+}
+.ui-dialog .ui-button .ui-icon {
+  background-image: none;
+  text-indent: 0;
+  line-height: 100%;
+}
+.ui-dialog .ui-button .ui-icon:after {
+  content: '\2715';
+  color:white;
+  position:absolute;
+  text-indent: 9999;
+  inset: 0;
+  left: 0;
+  right: 0;
+  top: 1px;
+  bottom: 0;
+  font-size:1.2rem;
+}
+
+.ui-widget-header {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+.ui-dialog .ui-dialog-title {
+  width: calc(100% - 18px);
+
+}
+
 .trade_summary{
   font-size:0.85rem;
   white-space: nowrap;
 }
 .trade_summary .subtotal td{
   border-top:1px solid #666;
-  padding-bottom:0.5em;
+  padding-bottom:0.2em;
 }
 .trade_summary .total td{
   border-top:double 3px #666;
@@ -2054,7 +2129,6 @@ table.graph td.d div.overlay{
   -webkit-box-shadow:4px 4px 6px rgba(0,0,0,0.5);
   box-shadow: 4px 4px 6px rgba(0,0,0,0.5);
 }
-
 .weeklyIndicator {
   position: relative;
   overflow: hidden;

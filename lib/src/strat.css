@@ -174,9 +174,9 @@ span.inputReadOnly{
 }
 
 /** options selector **/
-body .option_selector{
+body.mobile .option_selector {
   overflow-y:scroll;
-  height:300px;
+  height: calc(100% - 30px) !important;
 }
 .options_set{
   display:none;
@@ -199,9 +199,31 @@ body .option_selector{
   color: #444;
 }
 
+.option_selector__inner {
+  padding: 0 0.6rem;
+}
+
 .option_selector table{
   margin-top:.5em;
   border:1px solid #666;
+  position: relative;
+}
+.option_selector table:after {
+  content: '';
+  width: 0.6em;
+  height: 5px;
+  display: block;
+  position: absolute;
+  right: -0.6em;
+}
+.options_set.options_set_active table tr:nth-child(1) th {
+  position: sticky;
+  top: -3px;
+
+}
+.options_set.options_set_active table tr:nth-child(2) th {
+  position: sticky;
+  top: 15px;
 }
 
 .option_selector tr.type th, .option_selector tr.cols th{
