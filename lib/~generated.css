@@ -1,4 +1,49 @@
-body{
+body .qc-cmp-cleanslate.qc-cmp-cleanslate {
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  top: auto;
+  background-color: white;
+  box-shadow: 0 0 12px rgb(0 0 0 / 30%);
+}
+
+body div#qc-cmp2-ui {
+  width: calc(100vw - 2rem);
+  max-width:1280px;
+}
+
+.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled {
+  padding-bottom: 0;
+  padding-top:0;
+  border-top: none;
+}
+@media (min-width: 768px) {
+  body .css-17ovhjm.css-17ovhjm .qc-cmp2-footer {
+    padding: 0 0.5rem 0.5rem;
+    box-shadow: none;
+    border-top: none;
+  }
+}
+
+.css-17ovhjm.css-17ovhjm .qc-cmp2-summary-section .qc-cmp2-summary-info {
+  padding-bottom: 0;
+}
+@media (min-width: 768px) {
+  .css-17ovhjm.css-17ovhjm .qc-cmp2-consent-info {
+      padding: 0;
+      padding-top:1em;
+  }
+}
+
+.css-17ovhjm.css-17ovhjm .qc-cmp2-summary-section .qc-cmp2-summary-info p:nth-child(2) {
+  display: none;
+}
+
+.css-17ovhjm.css-17ovhjm h2 {
+  color:#a50000;
+  font-size: 1rem;
+  font-family: Verdana, Arial, sans-serif
+}body{
 	background-color:#06386a;
 	text-align:center;
 	margin:0; padding:0;
