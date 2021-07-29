@@ -12,7 +12,7 @@ body div#qc-cmp2-ui {
   max-width:1280px;
 }
 
-.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled {
+body .qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled {
   padding-bottom: 0;
   padding-top:0;
   border-top: none;
@@ -25,21 +25,21 @@ body div#qc-cmp2-ui {
   }
 }
 
-.css-17ovhjm.css-17ovhjm .qc-cmp2-summary-section .qc-cmp2-summary-info {
+body .css-17ovhjm.css-17ovhjm .qc-cmp2-summary-section .qc-cmp2-summary-info {
   padding-bottom: 0;
 }
 @media (min-width: 768px) {
-  .css-17ovhjm.css-17ovhjm .qc-cmp2-consent-info {
+  body .css-17ovhjm.css-17ovhjm .qc-cmp2-consent-info {
       padding: 0;
       padding-top:1em;
   }
 }
 
-.css-17ovhjm.css-17ovhjm .qc-cmp2-summary-section .qc-cmp2-summary-info p:nth-child(2) {
+body .css-17ovhjm.css-17ovhjm .qc-cmp2-summary-section .qc-cmp2-summary-info p:nth-child(2) {
   display: none;
 }
 
-.css-17ovhjm.css-17ovhjm h2 {
+body .css-17ovhjm.css-17ovhjm h2 {
   color:#a50000;
   font-size: 1rem;
   font-family: Verdana, Arial, sans-serif
