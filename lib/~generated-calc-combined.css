@@ -1,8 +1,11 @@
 body .qc-cmp-cleanslate.qc-cmp-cleanslate {
-  height: auto;
   position: fixed;
   bottom: 0;
+  max-height: calc(100vh);
+  height: auto;
   top: auto;
+  align-items: flex-start;
+  overflow-y: auto;
   background-color: white;
   box-shadow: 0 0 12px rgb(0 0 0 / 30%);
 }
@@ -18,28 +21,28 @@ body .qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled {
   border-top: none;
 }
 @media (min-width: 768px) {
-  body .css-17ovhjm.css-17ovhjm .qc-cmp2-footer {
+  body .qc-cmp-cleanslate.qc-cmp-cleanslate .qc-cmp2-footer {
     padding: 0 0.5rem 0.5rem;
     box-shadow: none;
     border-top: none;
   }
 }
 
-body .css-17ovhjm.css-17ovhjm .qc-cmp2-summary-section .qc-cmp2-summary-info {
+body .qc-cmp-cleanslate.qc-cmp-cleanslate .qc-cmp2-summary-section .qc-cmp2-summary-info {
   padding-bottom: 0;
 }
 @media (min-width: 768px) {
-  body .css-17ovhjm.css-17ovhjm .qc-cmp2-consent-info {
+  body .qc-cmp-cleanslate.qc-cmp-cleanslate .qc-cmp2-consent-info {
       padding: 0;
       padding-top:1em;
   }
 }
 
-body .css-17ovhjm.css-17ovhjm .qc-cmp2-summary-section .qc-cmp2-summary-info p:nth-child(2) {
+body .qc-cmp-cleanslate.qc-cmp-cleanslate .qc-cmp2-summary-section .qc-cmp2-summary-info p:nth-child(2) {
   display: none;
 }
 
-body .css-17ovhjm.css-17ovhjm h2 {
+body .qc-cmp-cleanslate.qc-cmp-cleanslate h2 {
   color:#a50000;
   font-size: 1rem;
   font-family: Verdana, Arial, sans-serif
