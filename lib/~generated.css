@@ -25,6 +25,7 @@ body .qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled {
     padding: 0 0.5rem 0.5rem;
     box-shadow: none;
     border-top: none;
+    max-width: 560px;
   }
 }
 
