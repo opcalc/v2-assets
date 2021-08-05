@@ -56,8 +56,8 @@ body{
 }
 
 body.full #supertop, body.full #top, body.full #main{
-  width:96%;
-  min-width: 1020px;
+  width:97.5%;
+  min-width: 1003px;
   max-width: 1400px;
 }
 body.full #top{
@@ -98,6 +98,47 @@ body.full #menu #top_but-calculator{
 }
 #menu .follow a{
  margin-top:-9px;
+}
+
+@media (min-width: 620px) and (max-width: 767px) {
+  #home_menu .menu_group ul li{
+    width: 100%
+  }
+  #strats-basic_wrapper, #info-basic_wrapper,
+  #strats-spreads_wrapper, #info-spreads_wrapper,
+  #strats-advanced_wrapper, #info-advanced_wrapper,
+  #strats-custom_wrapper, #info-custom_wrapper,
+  #home_menu #strats-basic_wrapper, #home_menu #info-basic_wrapper,
+  #home_menu #strats-spreads_wrapper, #home_menu #info-spreads_wrapper,
+  #home_menu #strats-advanced_wrapper, #home_menu #info-advanced_wrapper,
+  #home_menu #strats-custom_wrapper, #home_menu #info-custom_wrapper{
+    width:50% !important;
+    max-width: initial !important;
+  }
+  #home_menu {
+    margin: 0;
+  }
+}
+@media (max-width: 619px) {
+  #home_menu .menu_group ul li{
+    width: 100%
+  }
+  #strats-basic_wrapper, #info-basic_wrapper,
+  #strats-spreads_wrapper, #info-spreads_wrapper,
+  #strats-advanced_wrapper, #info-advanced_wrapper,
+  #strats-custom_wrapper, #info-custom_wrapper,
+  #home_menu #strats-basic_wrapper, #home_menu #info-basic_wrapper,
+  #home_menu #strats-spreads_wrapper, #home_menu #info-spreads_wrapper,
+  #home_menu #strats-advanced_wrapper, #home_menu #info-advanced_wrapper,
+  #home_menu #strats-custom_wrapper, #home_menu #info-custom_wrapper{
+    width:100% !important;
+    max-width: initial !important;
+  }
+  #options_menu #strats-spreads_menu li, #options_menu #info-spreads_menu li,
+  #options_menu #strats-advanced_wrapper li, #options_menu #info-custom_menu li
+  {
+   width:50% !important;
+  }
 }
 
 #main_pad{
@@ -813,7 +854,7 @@ body #status_messages {
   position:relative;
   background-color:#333;
   padding:3px;
-  margin: 0 8px 0 15px;
+  margin: 0 5px 0 5px;
   
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -831,7 +872,8 @@ body #status_messages {
    margin-bottom:10px
 }
 #menu .jq_exclusive_target>ul {
-  width:823px;
+  width:812px;
+  max-width: 100%;
   padding:0; margin:0;
  }
 body:not(.touch) #menu .dialog_tab_selected {
@@ -887,7 +929,7 @@ body:not(.touch) #menu .dialog_tab_selected {
   width:21%;
 }
 #strats-spreads_wrapper, #info-spreads_wrapper{
-  width:21%;
+  width:22%;
 }
 #strats-advanced_wrapper, #info-advanced_wrapper{
   width:32%;
@@ -896,7 +938,10 @@ body:not(.touch) #menu .dialog_tab_selected {
   width:25%;
 }
 #strats-advanced_menu li, #info-advanced_menu li{
-  width:50%;
+  width:45%;
+}
+#strats-advanced_menu li:nth-child(even), #info-advanced_menu li:nth-child(even){
+  width:55%;
 }
 #strats-custom_wrapper li, #info-custom_wrapper li {
   width: 50%;
@@ -920,20 +965,23 @@ body:not(.touch) #menu .dialog_tab_selected {
   float:none;
 }
 /** Tags and basic content **/
-h1{
-font-size:19px;
+h1, .h1{
+  font-size:19px;
+  font-weight: bold;
   color:#003366;
   font-family: verdana, arial, san-serif;
   padding-bottom:0px;
 }
-h2{
+h2, .h2{
   font-size:14.3px;
+  font-weight: bold;
   color:#A50000;
   font-family: verdana, arial, san-serif;
   padding-bottom:0px;
 }
-h3{
+h3, .h3{
   font-size:14px;
+  font-weight: bold;
   color:#333;
   font-family: arial, san-serif;
   padding-bottom:0px;

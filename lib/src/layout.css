@@ -56,8 +56,8 @@ body{
 }
 
 body.full #supertop, body.full #top, body.full #main{
-  width:96%;
-  min-width: 1020px;
+  width:97.5%;
+  min-width: 1003px;
   max-width: 1400px;
 }
 body.full #top{
@@ -98,6 +98,47 @@ body.full #menu #top_but-calculator{
 }
 #menu .follow a{
  margin-top:-9px;
+}
+
+@media (min-width: 620px) and (max-width: 767px) {
+  #home_menu .menu_group ul li{
+    width: 100%
+  }
+  #strats-basic_wrapper, #info-basic_wrapper,
+  #strats-spreads_wrapper, #info-spreads_wrapper,
+  #strats-advanced_wrapper, #info-advanced_wrapper,
+  #strats-custom_wrapper, #info-custom_wrapper,
+  #home_menu #strats-basic_wrapper, #home_menu #info-basic_wrapper,
+  #home_menu #strats-spreads_wrapper, #home_menu #info-spreads_wrapper,
+  #home_menu #strats-advanced_wrapper, #home_menu #info-advanced_wrapper,
+  #home_menu #strats-custom_wrapper, #home_menu #info-custom_wrapper{
+    width:50% !important;
+    max-width: initial !important;
+  }
+  #home_menu {
+    margin: 0;
+  }
+}
+@media (max-width: 619px) {
+  #home_menu .menu_group ul li{
+    width: 100%
+  }
+  #strats-basic_wrapper, #info-basic_wrapper,
+  #strats-spreads_wrapper, #info-spreads_wrapper,
+  #strats-advanced_wrapper, #info-advanced_wrapper,
+  #strats-custom_wrapper, #info-custom_wrapper,
+  #home_menu #strats-basic_wrapper, #home_menu #info-basic_wrapper,
+  #home_menu #strats-spreads_wrapper, #home_menu #info-spreads_wrapper,
+  #home_menu #strats-advanced_wrapper, #home_menu #info-advanced_wrapper,
+  #home_menu #strats-custom_wrapper, #home_menu #info-custom_wrapper{
+    width:100% !important;
+    max-width: initial !important;
+  }
+  #options_menu #strats-spreads_menu li, #options_menu #info-spreads_menu li,
+  #options_menu #strats-advanced_wrapper li, #options_menu #info-custom_menu li
+  {
+   width:50% !important;
+  }
 }
 
 #main_pad{

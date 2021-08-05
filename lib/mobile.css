@@ -97,27 +97,9 @@ body.mobile{
  margin-top: 25px;
  width: auto;
 }
-.mobile #home_menu .menu_group ul li{
-  width: 100%
-}
 
 .mobile .follow{
  display: none;
-}
-.mobile #strats-basic_wrapper, .mobile #info-basic_wrapper,
-.mobile #strats-spreads_wrapper, .mobile #info-spreads_wrapper,
-.mobile #strats-advanced_wrapper, .mobile #info-advanced_wrapper,
-.mobile #strats-custom_wrapper, .mobile #info-custom_wrapper,
-.mobile #home_menu #strats-basic_wrapper, .mobile #home_menu #info-basic_wrapper,
-.mobile #home_menu #strats-spreads_wrapper, .mobile #home_menu #info-spreads_wrapper,
-.mobile #home_menu #strats-advanced_wrapper, .mobile #home_menu #info-advanced_wrapper,
-.mobile #home_menu #strats-custom_wrapper, .mobile #home_menu #info-custom_wrapper{
- width:100%;
-}
-.mobile #strats-spreads_menu li, .mobile #info-spreads_menu li,
-.mobile #strats-advanced_wrapper li, .mobile #info-custom_menu li
-{
- width:50%;
 }
 .mobile .tab_fade_top,
 .mobile .tab_fade_bot{

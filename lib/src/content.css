@@ -1,18 +1,21 @@
 /** Tags and basic content **/
-h1{
-font-size:19px;
+h1, .h1{
+  font-size:19px;
+  font-weight: bold;
   color:#003366;
   font-family: verdana, arial, san-serif;
   padding-bottom:0px;
 }
-h2{
+h2, .h2{
   font-size:14.3px;
+  font-weight: bold;
   color:#A50000;
   font-family: verdana, arial, san-serif;
   padding-bottom:0px;
 }
-h3{
+h3, .h3{
   font-size:14px;
+  font-weight: bold;
   color:#333;
   font-family: arial, san-serif;
   padding-bottom:0px;

@@ -27,7 +27,7 @@
   position:relative;
   background-color:#333;
   padding:3px;
-  margin: 0 8px 0 15px;
+  margin: 0 5px 0 5px;
   
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -45,7 +45,8 @@
    margin-bottom:10px
 }
 #menu .jq_exclusive_target>ul {
-  width:823px;
+  width:812px;
+  max-width: 100%;
   padding:0; margin:0;
  }
 body:not(.touch) #menu .dialog_tab_selected {
@@ -101,7 +102,7 @@ body:not(.touch) #menu .dialog_tab_selected {
   width:21%;
 }
 #strats-spreads_wrapper, #info-spreads_wrapper{
-  width:21%;
+  width:22%;
 }
 #strats-advanced_wrapper, #info-advanced_wrapper{
   width:32%;
@@ -110,7 +111,10 @@ body:not(.touch) #menu .dialog_tab_selected {
   width:25%;
 }
 #strats-advanced_menu li, #info-advanced_menu li{
-  width:50%;
+  width:45%;
+}
+#strats-advanced_menu li:nth-child(even), #info-advanced_menu li:nth-child(even){
+  width:55%;
 }
 #strats-custom_wrapper li, #info-custom_wrapper li {
   width: 50%;

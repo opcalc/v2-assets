@@ -3,22 +3,56 @@
   flex-wrap: wrap;
 }
 #home_menu {
-  font-size:1.3em;
+  font-size:1.2em;
+  display: flex;
 }
-#homeMenuWrapper{
+#homeMenuWrapper {
   max-width: 840px;
-  width:81%;
-  flex: 1 0;
+  width: 69%;
+  flex: 1 0 auto;
+}
+#news{
+  width: calc(31% - 0.4rem);
+  margin-left: 0.4rem;
+}
+.full #news {
+  min-width: 300px;
 }
 
+.touch #main_pad {
+  display: flex;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #homeMenuWrapper {
+    max-width: none;
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  #home_menu {
+    display: block;
+    margin: 0;
+  }
+  #news {
+    width: auto;
+    max-width: 500px;
+  }
+}
+#home_menu .menu_group ul li {
+  width: auto;
+  float: none;
+}
 #home_menu #strats-basic_wrapper {
-  width:29%;
+  width: auto;
+  flex: 1 0 auto;
 }
 #home_menu #strats-spreads_wrapper {
-  width:27%;
+  width: auto;
+  flex: 1 0 auto;
 }
 #home_menu #strats-advanced_wrapper {
-  width:27%;
+  width: auto;
+  flex: 1 0 auto;
 }
 #home_menu #strats-advanced_wrapper li,
 #home_menu #strats-custom_wrapper li
@@ -27,7 +61,8 @@
   width:100%;
 }
 #home_menu #strats-custom_wrapper {
-  width:17%;
+  width: 5.4em;
+  max-width:17%;
 }
 .ad-ctnr.--home-banner {
   min-width: 100%;
@@ -36,26 +71,6 @@
   margin: 0 auto;
 }
 
-#news{
-  width: calc(18.5% - 0.4rem);
-  margin-left: 0.4rem;
-}
-.full #news {
-  min-width: 300px;
-}
-
-.touch #main_pad {
-  flex-direction: column;
-}
-.touch #home_menu {
-  width: 100%;
-  margin-left: 0;
-  box-sizing: border-box;
-}
-.touch #news {
-  width: auto;
-  max-width: 500px;
-}
 @media (min-width: 1150px) {
   #main_pad {
     margin-left: 2rem;
@@ -63,7 +78,7 @@
 }
 @media (min-width: 1280px) {
   #news {
-    width: calc(100% - 840px);
+    width: calc(100% - 840px - 0.5em);
   }
 }
 #news ul{
@@ -79,7 +94,7 @@
   padding-right: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1023px) {
   #news, .mobile #homeMenuWrapper{
     float:none;
     clear:left;
@@ -89,7 +104,7 @@
     margin-top:18px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 619px) {
   .ad.mob-footer-sticky {
     background-color: white;
     border-top: 1px solid lightgray;

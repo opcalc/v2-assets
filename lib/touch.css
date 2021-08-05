@@ -184,26 +184,11 @@ body.mobile{
  margin-top: 25px;
  width: auto;
 }
-.touch #home_menu .menu_group ul li{
+/* .touch #home_menu .menu_group ul li{
   width: 100%
-}
-
+} */
 .touch .follow{
  display: none;
-}
-.touch #strats-basic_wrapper, .touch #info-basic_wrapper,
-.touch #strats-spreads_wrapper, .touch #info-spreads_wrapper,
-.touch #strats-advanced_wrapper, .touch #info-advanced_wrapper,
-.touch #strats-custom_wrapper, .touch #info-custom_wrapper,
-.touch #home_menu #strats-basic_wrapper, .touch #home_menu #info-basic_wrapper,
-.touch #home_menu #strats-spreads_wrapper, .touch #home_menu #info-spreads_wrapper,
-.touch #home_menu #strats-advanced_wrapper, .touch #home_menu #info-advanced_wrapper,
-.touch #home_menu #strats-custom_wrapper, .touch #home_menu #info-custom_wrapper{
- width:100%;
-}
-.touch #strats-spreads_menu li, .touch #info-spreads_menu li,
-.touch #strats-custom_menu li, .touch #info-custom_menu li{
- width:50%;
 }
 .touch .tab_fade_top,
 .touch .tab_fade_bot{
