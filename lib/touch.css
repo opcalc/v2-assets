@@ -240,3 +240,6 @@ body.mobile{
 .touch #strat_F_button {
   display: none;
 }
+.touch .google_chart_holder {
+  padding-bottom: 6px;
+}
