@@ -301,6 +301,11 @@ body.mobile .option_selector {
 .summary p {
   margin: .5em 0 0;
 }
+.summary p.minor.asAt {
+  margin: 0.3em 0 0.2em;
+  color: #999;
+  font-size: 10.5px;
+}
 
 .summary h2, .summary h3{
   display:inline-block;
@@ -527,4 +532,14 @@ body.mobile .option_selector {
 }
 .google_chart_holder {
   min-width: 500px;
+}
+/* Print */
+@media print {
+  #top, #tab_holder, .ad, .footer, #content_right, .shareHolder, .more_holder, .breadcrumb {
+    display: none !important;
+  }
+  .full #content_holder {
+      width: 100% !important;
+      max-width: 100% !important;
+  }
 }

@@ -1716,6 +1716,11 @@ body.mobile .option_selector {
 .summary p {
   margin: .5em 0 0;
 }
+.summary p.minor.asAt {
+  margin: 0.3em 0 0.2em;
+  color: #999;
+  font-size: 10.5px;
+}
 
 .summary h2, .summary h3{
   display:inline-block;
@@ -1942,7 +1947,18 @@ body.mobile .option_selector {
 }
 .google_chart_holder {
   min-width: 500px;
-}table.graph td.d div, table.graph th.t {
+}
+/* Print */
+@media print {
+  #top, #tab_holder, .ad, .footer, #content_right, .shareHolder, .more_holder, .breadcrumb {
+    display: none !important;
+  }
+  .full #content_holder {
+      width: 100% !important;
+      max-width: 100% !important;
+  }
+}
+table.graph td.d div, table.graph th.t {
  min-width:24px;
  position:relative;
 /* background-color:#fff;*/
@@ -2303,6 +2319,11 @@ table.graph tr:nth-child(2) th  {
 }
 table.graph tr:nth-child(1) td, table.graph tr:nth-child(1) th {
   border-top: 1px solid #e3e3e3 !important;
+}
+/* Top-left cell with stock code */
+table.graph tr:nth-child(2) > th:first-child {
+  text-align: center;
+  font-size:85%;
 }
 table.graph tr > th:first-child {
   position: sticky;

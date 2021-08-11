@@ -360,6 +360,11 @@ table.graph tr:nth-child(2) th  {
 table.graph tr:nth-child(1) td, table.graph tr:nth-child(1) th {
   border-top: 1px solid #e3e3e3 !important;
 }
+/* Top-left cell with stock code */
+table.graph tr:nth-child(2) > th:first-child {
+  text-align: center;
+  font-size:85%;
+}
 table.graph tr > th:first-child {
   position: sticky;
   left: -10px;
