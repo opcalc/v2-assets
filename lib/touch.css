@@ -43,16 +43,6 @@
   color:#333;
   font-weight:normal;
 }
-.touch .dialog_tab_selected a, .touch .dialog_tab_selected .minor{
-  color:#fff;
-}
-.touch .close_x{
-  display: block;
-  background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/close-x-lg.gif'); /* absolute-url */
-  width:22px;
-  height:22px;
-  top: 8px;
-}
 .touch #current_calc_header {
   /* Copied from .button */
   color:#FFF;
@@ -223,15 +213,7 @@ body.mobile{
 .touch .msg {
   padding-right: 2.25em;
 }
-.touch .msg .close_x {
-  top: 2px;
-}
 
-.touch .msg:hover .close_x{
-  position:absolute;
-  display:block;
-  left: auto;
-}
 .touch .main-col {
   width: auto;
   max-width: 100%;

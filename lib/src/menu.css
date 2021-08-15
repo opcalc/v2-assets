@@ -127,6 +127,9 @@ body:not(.touch) #menu .dialog_tab_selected {
  font-size:1em;
  border-bottom:1px solid #ff8;
 }
+#home_menu .menu {
+  margin-bottom: 0.5em;
+}
 .menu_group ul{
  margin:0;
  padding:0;

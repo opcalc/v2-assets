@@ -185,25 +185,28 @@ padding-top:10px;
 
 
 .close_x{
-  /*background-color: #ddd;*/
-  background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/close-x.gif'); /* absolute-url */
-  width:11px;
-  height:11px;
-  position:absolute;
-  top:10px;
-  right:5px;
-
-  display:none;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+  z-index: 21;
+  line-height: 100%;
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: normal;
+  color: #949ebd;
+}
+.close_x:hover{
+  color: #6279b8;
 }
 *:hover>.close_x{
   display:block;
 }
 
 .msg:hover .close_x{
-  position:relative;
   display:inline-block;
-  top:0;
-  left:5px;
 }
 
 #tab_holder_tabs{
@@ -665,8 +668,19 @@ body.mobile #tab_holder_tabs {
   margin-bottom: 0;
   padding-bottom: 30px;
 }
+@keyframes zoomIn {
+  from {
+    transform: scale(0.965);
+    opacity: 0.2;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 body.touch #tab_holder_tabs.--show {
   display: block;
+  animation: zoomIn 80ms ease-in-out;
 }
 body.touch #tab_holder_tabs > ._close,
 body.touch #tab_holder_tabs > .dialog_tab._close {
@@ -805,9 +819,6 @@ body.touch #current_calc_header {
 }
 body.touch #current_calc_header:after {
   margin-left:2px;
-}
-body #status_messages {
-  border: none;
 }
 .transitional .inputLabel {
   font-size: 0.95rem;

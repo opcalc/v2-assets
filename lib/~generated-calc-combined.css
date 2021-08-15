@@ -185,25 +185,28 @@ padding-top:10px;
 
 
 .close_x{
-  /*background-color: #ddd;*/
-  background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/close-x.gif'); /* absolute-url */
-  width:11px;
-  height:11px;
-  position:absolute;
-  top:10px;
-  right:5px;
-
-  display:none;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+  z-index: 21;
+  line-height: 100%;
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: normal;
+  color: #949ebd;
+}
+.close_x:hover{
+  color: #6279b8;
 }
 *:hover>.close_x{
   display:block;
 }
 
 .msg:hover .close_x{
-  position:relative;
   display:inline-block;
-  top:0;
-  left:5px;
 }
 
 #tab_holder_tabs{
@@ -665,8 +668,19 @@ body.mobile #tab_holder_tabs {
   margin-bottom: 0;
   padding-bottom: 30px;
 }
+@keyframes zoomIn {
+  from {
+    transform: scale(0.965);
+    opacity: 0.2;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 body.touch #tab_holder_tabs.--show {
   display: block;
+  animation: zoomIn 80ms ease-in-out;
 }
 body.touch #tab_holder_tabs > ._close,
 body.touch #tab_holder_tabs > .dialog_tab._close {
@@ -805,9 +819,6 @@ body.touch #current_calc_header {
 }
 body.touch #current_calc_header:after {
   margin-left:2px;
-}
-body #status_messages {
-  border: none;
 }
 .transitional .inputLabel {
   font-size: 0.95rem;
@@ -953,6 +964,9 @@ body:not(.touch) #menu .dialog_tab_selected {
  width: calc(100% - 5px);
  font-size:1em;
  border-bottom:1px solid #ff8;
+}
+#home_menu .menu {
+  margin-bottom: 0.5em;
 }
 .menu_group ul{
  margin:0;
@@ -1116,30 +1130,56 @@ input.field_error{
   position: fixed;
   display: flex;
   justify-content: center;
-  top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index:20;
 }
-#status_messages{
-  background-color:#fff;
-  border:1px solid #336;
-/*  padding:3px 6px*/
-/*  display: none;*/
-
-  -webkit-border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  -moz-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  box-shadow: 0 2px 2px rgba(0,0,0,0.3);
-}
-.msg{
-  padding:.5em 1em;
+#status_messages .msg{
+  background: white;
+  margin-top: 3px;
+  min-width: 12rem;
+  text-align: center;
+  position: relative;
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  padding: .5em 1.6em;
   position:relative;
+}
+@keyframes slideup {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.msg.__showing {
+  animation-name: slideup;
+  animation-duration: 400ms;
+}
+.msg.__hiding {
+  animation-name: slideup;
+  animation-duration: 400ms;
+  animation-direction: reverse;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+#status_messages .msg .close_x {
+  position: absolute;
+  left: initial;
+  top: 0;
+  right: 0;
+  padding: .2rem;
 }
 .panel {
   padding: 0.5em 1.5em;
@@ -1158,10 +1198,6 @@ input.field_error{
   border-radius: 5px;
   border-radius: 5px;
   padding: 0.5rem 0.67rem;
-}
-.close_x{
-  text-indent:-5000px;
-
 }
 .help{
   display: inline-block;
@@ -1215,7 +1251,7 @@ color:#fff;
 .sel_tab a{color:#fff; text-decoration:none;}
 .usel_tab a{color:#000; text-decoration:none;}
    */
-.dialog_tab_selected a{
+.dialog_tab_selected a:not(.close_x){
   text-decoration:none;
   color:#000;
 }

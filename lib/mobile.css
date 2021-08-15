@@ -47,14 +47,14 @@
   color:#333;
   font-weight:normal;
 }
-.mobile .dialog_tab_selected a, .mobile .dialog_tab_selected .minor{
-  color:#fff;
-}
 .mobile .close_x{
   display:block;
-  background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/close-x-lg.gif'); /* absolute-url */
+  font-size: 1.7rem;
   width:22px;
   height:22px;
+}
+.mobile #status_messages .msg .close_x {
+  padding-top: 0;
 }
 .mobile #tab_holder_tabs {
   -ms-grid-template-columns: 1fr;
