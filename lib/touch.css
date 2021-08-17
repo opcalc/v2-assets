@@ -225,3 +225,9 @@ body.mobile{
 .touch .google_chart_holder {
   padding-bottom: 6px;
 }
+.touch .options_set.options_set_active table tr:nth-child(1) th {
+  top: -3px;
+}
+.touch .options_set.options_set_active table tr:nth-child(2) th {
+  top: 15px;
+}

@@ -180,6 +180,18 @@ span.inputReadOnly{
 }
 
 /** options selector **/
+.ui-dialog-content.option_selector {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.ui-dialog-content.option_selector .loading-wrapper {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 body.mobile .option_selector {
   overflow-y:scroll;
   height: calc(100% - 30px) !important;
@@ -206,7 +218,7 @@ body.mobile .option_selector {
 }
 
 .option_selector__inner {
-  padding: 0 0.6rem;
+  padding: 0.5rem 0.6rem;
 }
 
 .option_selector table{
@@ -224,12 +236,11 @@ body.mobile .option_selector {
 }
 .options_set.options_set_active table tr:nth-child(1) th {
   position: sticky;
-  top: -3px;
-
+  top: 0;
 }
 .options_set.options_set_active table tr:nth-child(2) th {
   position: sticky;
-  top: 15px;
+  top: 18px;
 }
 
 .option_selector tr.type th, .option_selector tr.cols th{
