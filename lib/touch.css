@@ -231,3 +231,7 @@ body.mobile{
 .touch .options_set.options_set_active table tr:nth-child(2) th {
   top: 15px;
 }
+.touch input {
+  padding-left: 1ch;
+  padding-right: 1ch;
+}

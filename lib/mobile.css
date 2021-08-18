@@ -123,7 +123,14 @@ body.mobile{
   font-size:0.925em;
   white-space: nowrap;
 }
-
+body.mobile .calcButton.button {
+  width: 100%;
+  font-weight: 700;
+}
+/* body.mobile .formComplete .calcButton.button {
+  position: sticky;
+  bottom: 8px;
+} */
 /* !!! #menu top should be margin-top ??? or ie reason its not
  tab_holder ... * { width: auto }
  /* !!! change sub-text to not use br

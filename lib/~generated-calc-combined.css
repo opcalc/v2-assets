@@ -1489,7 +1489,7 @@ select.subtle-editing, input.subtle-editing{
  padding:2px 5px;
  background-color:#ddd;
 }
-.submitInputs .button{
+.calcButton.button{
   cursor: pointer;
   display:block;
   clear:both;
@@ -1510,7 +1510,9 @@ select.subtle-editing, input.subtle-editing{
 	clear:right;
 }
 input.input[disabled='disabled']{
-}
+  -webkit-opacity:1;
+  opacity: 1;
+} 
 input.input.appearDisabled:not(:hover) {
   padding: 2px 3.5px;
 }
@@ -1528,6 +1530,7 @@ input.inputInvisible, input.inputInvisible.inputNumeric {
   background-color:#fff;
   border:none;
   color:#000000;
+  -webkit-text-fill-color:#000000;
   text-align:left;
 }
 label.inputLabel{
