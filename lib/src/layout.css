@@ -214,6 +214,9 @@ padding-top:10px;
  padding:0;
  margin-top: 0.3em;
 }
+.full #tab_holder_tabs {
+  min-height: 10em;
+}
 #tab_holder{
  padding:0;
  margin:0;
@@ -824,7 +827,7 @@ body.touch #current_calc_header:after {
   font-size: 0.95rem;
   width: 7.9em;
 }
-.transitional .submitInputs .button {
+.transitional .submitInputsCtnr .button {
   padding-top: 2px;
   padding-bottom: 2px;
 }

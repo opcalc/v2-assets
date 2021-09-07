@@ -19,9 +19,17 @@ table.graph td.pct, table.graph th.pct {
 table.graph th.pct{
   font-size: 0.9em;
 }
+.graphVisTypeIconCtnr {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: flex-start;
+}
+.graphVisTypeIcon[name=graphVisTypeIcon--matrix] {
+  padding: 5px;
+}
 .graphVisTypeIcon {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +39,9 @@ table.graph th.pct{
   cursor: pointer;
   border: none;
   margin-right: 2px;
+}
+.graphVisTypeIcon:last-of-type {
+  margin-right: 0;
 }
 
 .graphVisTypeIcon:not(.__active):hover {

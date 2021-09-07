@@ -214,6 +214,9 @@ padding-top:10px;
  padding:0;
  margin-top: 0.3em;
 }
+.full #tab_holder_tabs {
+  min-height: 10em;
+}
 #tab_holder{
  padding:0;
  margin:0;
@@ -824,7 +827,7 @@ body.touch #current_calc_header:after {
   font-size: 0.95rem;
   width: 7.9em;
 }
-.transitional .submitInputs .button {
+.transitional .submitInputsCtnr .button {
   padding-top: 2px;
   padding-bottom: 2px;
 }
@@ -1054,9 +1057,8 @@ a.memb{
 a.button--outline:hover, input[type=button].button--outline:hover {
   background-color: #ececf1;
 }
-.button[disabled], .button.--disabled {
-  background-image: none;
-  background-color: #dddddd;
+.button[disabled], .button.button--disabled {
+  opacity: 0.3;
   cursor: default;
 }
 .smallButton{
@@ -1068,6 +1070,43 @@ a.button--outline:hover, input[type=button].button--outline:hover {
   min-width: 5em;
 }
 
+@keyframes blink {
+  0% { 
+    opacity: 0.15;
+    transform: scale(0.65);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% { 
+    opacity: 0.15;
+    transform: scale(0.65);
+  }
+}
+.loaderDotCtnr {
+  display: flex;
+  justify-content: center;
+}
+.loaderDot {
+  border-radius: 100px;
+  width: 7px;
+  height: 7px;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.loaderDot--2 {
+  margin-left: 4px;
+  animation-delay: 333ms;
+}
+.loaderDot--3 {
+  margin-left: 4px;
+  animation-delay: 666ms;
+}
+.loaderDot--white {
+  background-color: white;
+}
 
 .minor{
   font-size:.9em;
@@ -1200,11 +1239,12 @@ input.field_error{
   padding: 0.5rem 0.67rem;
 }
 .help{
-  display: inline-block;
-  text-align: center;
-  width: 16px;
-  height: 16px;
-  font-size: 13px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  font-size: 11px;
   font-weight: bold;
   color: white;
   background-color: #aaa;
@@ -1215,6 +1255,9 @@ input.field_error{
 
 .jq_start_hidden{
   display: none;
+}
+.jq_start_invisible {
+  visibility: hidden;
 }
 
 .mobile .hideMobile,
@@ -1235,6 +1278,7 @@ input.field_error{
 .fieldLabel {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 } 
 
 /** other **/
@@ -1255,7 +1299,10 @@ color:#fff;
   text-decoration:none;
   color:#000;
 }
-
+.full #tab_holder {
+  position: sticky;
+  top: 0;
+}
 #tab_holder .dialog_tab {
   padding-bottom:0;
   padding-right:0;
@@ -1491,10 +1538,14 @@ select.subtle-editing, input.subtle-editing{
 }
 .calcButton.button{
   cursor: pointer;
-  display:block;
-  clear:both;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;;
   margin: 0.8em 0 8px;
   padding: 4px 16px;
+  min-height: 32px;
+  box-sizing: border-box;
+  min-width: 7em;
 }
 .stratContent h2{
   clear:both;
@@ -1589,7 +1640,7 @@ input.inputNumeric{
  text-align:right;
 }
 input[name="symbol-curPrice"], input[name="underlying-curPrice"] {
-  margin-right: 0.3em;
+  /* margin-right: 0.3em; */
 }
 span.input{
  height:24px;
@@ -1603,7 +1654,8 @@ span.inputReadOnly{
   clear:none;
 }
 
-.submitInputs{
+.submitInputs--loading{
+  opacity: 0.3;
 }
 
 .more_holder{
@@ -1894,13 +1946,11 @@ body.mobile .option_selector {
 }
 
 #loading-ctnr{
-  clear: left;
   margin-left: 0;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 .full #loading-ctnr{
-  margin-left: 190px;
 }
 
 #loading-ctnr > .loading-wrapper{
@@ -2029,9 +2079,17 @@ table.graph td.pct, table.graph th.pct {
 table.graph th.pct{
   font-size: 0.9em;
 }
+.graphVisTypeIconCtnr {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: flex-start;
+}
+.graphVisTypeIcon[name=graphVisTypeIcon--matrix] {
+  padding: 5px;
+}
 .graphVisTypeIcon {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -2041,6 +2099,9 @@ table.graph th.pct{
   cursor: pointer;
   border: none;
   margin-right: 2px;
+}
+.graphVisTypeIcon:last-of-type {
+  margin-right: 0;
 }
 
 .graphVisTypeIcon:not(.__active):hover {

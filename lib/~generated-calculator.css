@@ -46,10 +46,14 @@ select.subtle-editing, input.subtle-editing{
 }
 .calcButton.button{
   cursor: pointer;
-  display:block;
-  clear:both;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;;
   margin: 0.8em 0 8px;
   padding: 4px 16px;
+  min-height: 32px;
+  box-sizing: border-box;
+  min-width: 7em;
 }
 .stratContent h2{
   clear:both;
@@ -144,7 +148,7 @@ input.inputNumeric{
  text-align:right;
 }
 input[name="symbol-curPrice"], input[name="underlying-curPrice"] {
-  margin-right: 0.3em;
+  /* margin-right: 0.3em; */
 }
 span.input{
  height:24px;
@@ -158,7 +162,8 @@ span.inputReadOnly{
   clear:none;
 }
 
-.submitInputs{
+.submitInputs--loading{
+  opacity: 0.3;
 }
 
 .more_holder{
@@ -449,13 +454,11 @@ body.mobile .option_selector {
 }
 
 #loading-ctnr{
-  clear: left;
   margin-left: 0;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 .full #loading-ctnr{
-  margin-left: 190px;
 }
 
 #loading-ctnr > .loading-wrapper{
@@ -584,9 +587,17 @@ table.graph td.pct, table.graph th.pct {
 table.graph th.pct{
   font-size: 0.9em;
 }
+.graphVisTypeIconCtnr {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: flex-start;
+}
+.graphVisTypeIcon[name=graphVisTypeIcon--matrix] {
+  padding: 5px;
+}
 .graphVisTypeIcon {
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -596,6 +607,9 @@ table.graph th.pct{
   cursor: pointer;
   border: none;
   margin-right: 2px;
+}
+.graphVisTypeIcon:last-of-type {
+  margin-right: 0;
 }
 
 .graphVisTypeIcon:not(.__active):hover {

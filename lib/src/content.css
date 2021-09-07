@@ -74,9 +74,8 @@ a.memb{
 a.button--outline:hover, input[type=button].button--outline:hover {
   background-color: #ececf1;
 }
-.button[disabled], .button.--disabled {
-  background-image: none;
-  background-color: #dddddd;
+.button[disabled], .button.button--disabled {
+  opacity: 0.3;
   cursor: default;
 }
 .smallButton{
@@ -88,6 +87,43 @@ a.button--outline:hover, input[type=button].button--outline:hover {
   min-width: 5em;
 }
 
+@keyframes blink {
+  0% { 
+    opacity: 0.15;
+    transform: scale(0.65);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% { 
+    opacity: 0.15;
+    transform: scale(0.65);
+  }
+}
+.loaderDotCtnr {
+  display: flex;
+  justify-content: center;
+}
+.loaderDot {
+  border-radius: 100px;
+  width: 7px;
+  height: 7px;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.loaderDot--2 {
+  margin-left: 4px;
+  animation-delay: 333ms;
+}
+.loaderDot--3 {
+  margin-left: 4px;
+  animation-delay: 666ms;
+}
+.loaderDot--white {
+  background-color: white;
+}
 
 .minor{
   font-size:.9em;
@@ -220,11 +256,12 @@ input.field_error{
   padding: 0.5rem 0.67rem;
 }
 .help{
-  display: inline-block;
-  text-align: center;
-  width: 16px;
-  height: 16px;
-  font-size: 13px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  font-size: 11px;
   font-weight: bold;
   color: white;
   background-color: #aaa;
@@ -235,6 +272,9 @@ input.field_error{
 
 .jq_start_hidden{
   display: none;
+}
+.jq_start_invisible {
+  visibility: hidden;
 }
 
 .mobile .hideMobile,
@@ -255,6 +295,7 @@ input.field_error{
 .fieldLabel {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 } 
 
 /** other **/
@@ -275,7 +316,10 @@ color:#fff;
   text-decoration:none;
   color:#000;
 }
-
+.full #tab_holder {
+  position: sticky;
+  top: 0;
+}
 #tab_holder .dialog_tab {
   padding-bottom:0;
   padding-right:0;
