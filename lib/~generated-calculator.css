@@ -583,12 +583,12 @@ body.mobile .option_selector {
   display: none;
 }
 .select-button__description {
-  margin-right: 15.5px;
+  margin-right: 12px;
 }
 .select-button .select-button__icon {
   margin: 3px -4px 4px;
 }
-.select-button--compressed .select-button__icon {
+.mobile .select-button--compressed .select-button__icon {
   margin: 3px -8.5px 4px;
 }
 table.graph td.d div, table.graph th.t {
