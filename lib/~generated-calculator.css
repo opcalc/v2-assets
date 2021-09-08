@@ -24,6 +24,9 @@
   display: flex;
   align-items: baseline;
 }
+.inputWrapper.inputWrapper--centred {
+  align-items: center;
+}
 .inputWrapper.__narrow {
   margin: 0.5px 0;
 }
@@ -173,6 +176,8 @@ span.inputReadOnly{
 .element_option_selector{
   padding-left: 8px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .element_option_selector .options_selector{
   position:absolute;
@@ -565,6 +570,26 @@ body.mobile .option_selector {
       width: 100% !important;
       max-width: 100% !important;
   }
+}
+
+.element_option_selector .option-description.option-description--has-content {
+  margin-right: 1ch;
+}
+.select-button {
+  display: inline-flex;
+  align-items: center;
+}
+.select-button.select-button--hidden {
+  display: none;
+}
+.select-button__description {
+  margin-right: 15.5px;
+}
+.select-button .select-button__icon {
+  margin: 3px -4px 4px;
+}
+.select-button--compressed .select-button__icon {
+  margin: 3px -8.5px 4px;
 }
 table.graph td.d div, table.graph th.t {
  min-width:24px;

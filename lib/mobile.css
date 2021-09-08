@@ -23,7 +23,7 @@
   position: absolute;
   top: 0;
   left:0;
-  background-image:url('/images/search.svg');
+  background-image:url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/search.svg');
   background-size: 1em;
   bottom: 0;
   right: 0;
