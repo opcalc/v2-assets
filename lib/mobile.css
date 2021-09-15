@@ -13,12 +13,56 @@
   margin-left: 0px;
 }
 
-.mobile [name=underlying-symbol]+.button {
+/* Strategy calcs */
+.mobile .inputWrapper > span.input {
+  max-width: 300px;
+  flex-grow: 1;
+}
+.mobile [name=underlying-symbol], .mobile [name=symbol-symbol] {
+  align-self: stretch;
+  flex: 0 1 calc(90px + 2.5ch);
+  max-width: calc(90px + 2.5ch);
+  width: 60px;
+  box-sizing: border-box;
+  /* flex: 0 1 180px;
+  width: 60px; */
+}
+.mobile .inputWrapper .input[name=underlying-curPrice],
+.mobile .inputWrapper .input[name=symbol-curPrice],
+.mobile .inputWrapper .input[name=underlying-price],
+.mobile .inputWrapper .input[name=underlying-num],
+.mobile .inputWrapper .optionLeg__priceInput,
+.mobile .inputWrapper .optionLeg__contractsInput,
+.mobile .inputWrapper .optionLeg__expiry,
+.mobile .inputWrapper .optionLeg__strike,
+.mobile .inputWrapper .optionLeg__iv,
+.mobile .finder_expectedPrice,
+.mobile .finder_date_expiry,
+.mobile .finder_date_specific,
+.mobile .finder_maxRisk,
+.mobile .inputWrapper .calcOptions_calcDate,
+.mobile .inputWrapper .calcOptions_ivChange,
+.mobile .inputWrapper .optionLeg__opType,
+.mobile .inputWrapper .optionLeg__act
+{
+  flex: 0 1 calc(90px + 2.5ch);
+  max-width: calc(90px + 2.5ch);
+  width: 60px;
+  box-sizing: border-box;
+}
+.mobile .inputWrapper .optionLeg__opType,
+.mobile .inputWrapper .optionLeg__act {
+  text-align: center;
+}
+
+.mobile input[name=underlying-symbol] + .button,
+.mobile input[name=symbol-symbol] + .button {
   text-indent:  -9999px;
   position:relative;
-  width: 2.5em;
+  width: 1.5em;
 }
-.mobile [name=underlying-symbol]+.button:after {
+.mobile input[name=symbol-symbol] + .button:after,
+.mobile input[name=underlying-symbol] + .button:after {
   content:'';
   position: absolute;
   top: 0;

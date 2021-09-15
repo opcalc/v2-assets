@@ -291,6 +291,16 @@ input.field_error{
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .hide-mob {
+    display: none;
+  }
+}
+@media (min-width: 481px) {
+  .hide-mob-plus {
+    display: none;
+  }
+}
 
 .fieldLabel {
   display: flex;

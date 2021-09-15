@@ -6,10 +6,15 @@
 }
 .finder_result { 
   margin-bottom: 1.6em;
+  min-height: 1.5em;
 }
 .finder_results p.finder__add-class {
   margin-top: 0.7em;
 }
+.finder_expectedPrice {
+  margin-right: 1ch;
+}
+
 #tF_expirySelector select {
   min-width: 8em;
 }

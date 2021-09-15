@@ -201,6 +201,9 @@ padding-top:10px;
 .close_x:hover{
   color: #6279b8;
 }
+.dialog_tab .close_x {
+  background-color: white;
+}
 *:hover>.close_x{
   display:block;
 }
@@ -215,7 +218,8 @@ padding-top:10px;
  margin-top: 0.3em;
 }
 .full #tab_holder_tabs {
-  min-height: 10em;
+  min-height: 5.5em;
+  margin-bottom: 0;
 }
 #tab_holder{
  padding:0;
@@ -801,6 +805,14 @@ body a.button, body input[type=button].button, body.touch #current_calc_header {
   font-weight: 500;
   font-size: 14.4px;
   line-height: 24px;
+  transition: opacity 100ms ease-out;
+}
+body.full a.button:hover, body.full input[type=button].button:hover, body.touch #current_calc_header:hover {
+  opacity: 0.8;
+}
+body a.button:active, body input[type=button].button:active {
+  opacity: 0.6 !important;
+  transition: all 50ms ease-in-out;
 }
 body a.smallButton, body input[type=button].smallButton {
   line-height: 18px;
@@ -839,7 +851,10 @@ body.touch #current_calc_header:after {
   letter-spacing: -0.10ex;
 }
 /***/
-#menu {
+
+.translucentLoading {
+  opacity: 0.4;
+}#menu {
   left:186px;
   top:10px;
   width:781px;
@@ -1274,6 +1289,16 @@ input.field_error{
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .hide-mob {
+    display: none;
+  }
+}
+@media (min-width: 481px) {
+  .hide-mob-plus {
+    display: none;
+  }
+}
 
 .fieldLabel {
   display: flex;
@@ -1481,10 +1506,15 @@ img[src="https://go.ezoic.net/utilcave_com/img/ezoic.png"] {
 }
 .finder_result { 
   margin-bottom: 1.6em;
+  min-height: 1.5em;
 }
 .finder_results p.finder__add-class {
   margin-top: 0.7em;
 }
+.finder_expectedPrice {
+  margin-right: 1ch;
+}
+
 #tF_expirySelector select {
   min-width: 8em;
 }

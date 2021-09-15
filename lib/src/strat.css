@@ -13,9 +13,9 @@
 	clear:left;
 }
 .inputWrapper{
-  clear:left;
   margin: 4px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 .inputWrapper.inputWrapper--centred {
@@ -59,21 +59,23 @@ select.subtle-editing, input.subtle-editing{
   margin-top: 0.3em;
 }
 .element{
-  margin-bottom:2em;
+  margin-bottom: 1.8em;
 }
 
 .input{
 	clear:right;
 }
+input.input {
+  border-radius: 0;
+}
 input.input[disabled='disabled']{
   -webkit-opacity:1;
   opacity: 1;
-} 
-input.input.appearDisabled:not(:hover) {
-  padding: 2px 3.5px;
 }
 select {
-  background-color: transparent;
+  /* background-color: transparent; */
+  border:1px solid #666;
+  border-radius: 3px;
 } 
 select.appearDisabled {
   border-color: #ccc;
@@ -98,6 +100,7 @@ label.inputLabel{
  padding-bottom:5px;
  clear:left;
  font-size: 0.9rem;
+ flex-shrink: 0;
 }
 .inputLabelSmall {
   font-size: 0.65rem;
@@ -120,17 +123,23 @@ label.lineInput {
   display: block;
 }
 input.input, select.input:not(.subtle) {
- margin-left:10px;
- padding: 2px 3.5px;
- font-size: 0.9rem;
- border: 1px solid #666;
+  font-size: 0.9rem;
+  border: 1px solid #666;
+}
+input.input, select.input:not(.subtle), span.inputReadOnly, input.input.appearDisabled:not(:hover) {
+  padding: 5px 3.5px;
+  box-sizing: border-box;
+}
+select.input:not(.subtle) {
+  padding: 4px 3.5px;
+  box-sizing: border-box;
 }
 select.input.subtle {
   margin-left: 5px;
   font-size: 0.9rem;
 }
-input.inputWithDollar, .input.noLeftMargin, .input.noLeftMargin:not(.subtle) {
- margin-left:2px;
+.input.noLeftMargin, .input.noLeftMargin:not(.subtle) {
+ margin-left:0;
 }
 select.selectPlaceholder {
   color: #aaa;
@@ -148,8 +157,9 @@ input[name="symbol-curPrice"], input[name="underlying-curPrice"] {
   /* margin-right: 0.3em; */
 }
 span.input{
- height:24px;
- display:block;
+ /* min-height:24px; */
+ display:flex;
+ align-items:center;
  float:left;
  clear:right;
 }
@@ -162,13 +172,20 @@ span.inputReadOnly{
 .submitInputs--loading{
   opacity: 0.3;
 }
+.inputWrapper .inputWrapper__pre {
+  min-width: 1.4ch;
+  text-align: right;
+  padding-right: .2ch;
+}
+.inputWrapper .optionLeg__contractsInput {
+  margin-right: 0.7ch;
+}
 
 .more_holder{
   clear:both;
 }
 
 .element_option_selector{
-  padding-left: 8px;
   position: relative;
   display: flex;
   align-items: center;
@@ -584,4 +601,10 @@ body.mobile .option_selector {
 }
 .mobile .select-button--compressed .select-button__icon {
   margin: 3px -8.5px 4px;
+}
+
+input[name=underlying-symbol]+.button,
+input[name=symbol-symbol]+.button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
