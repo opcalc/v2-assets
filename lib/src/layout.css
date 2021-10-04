@@ -2,8 +2,10 @@ body{
 	background-color:#06386a;
 	text-align:center;
 	margin:0; padding:0;
-	font-family: verdana, arial, san-serif;
-	font-size:0.875em;
+	font-family: 'Manrope', verdana, arial, san-serif;
+	font-size:0.9em;
+  letter-spacing: 0.01em;
+  font-weight: 500;
   background-image: url(https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/bg-tile.gif); /* absolute-url */
   background-repeat: repeat-x;
   background-attachment: fixed;
@@ -244,7 +246,6 @@ padding-top:10px;
 }
 #calcs_holder {
   margin-left: 12px;
-  min-height: 750px;
 }
 
 .stratTab{
@@ -297,9 +298,6 @@ padding-top:10px;
   color:#8cf;
 
 }
-
-
-.clearfix {display: inline-block;}
 
 .clearfix:after {
 	content: ".";
@@ -777,26 +775,15 @@ body.touch .stratTab.dialog_tab_selected a, .touch .dialog_tab_selected .minor {
   text-decoration-color: #ffffffff;
 
 }
-body.classic:not(.touch) #menu .dialog_tab_selected {
-  background-color: #343438;
-}
 body:not(.touch) #menu .dialog_tab_selected {
   padding-top: initial;
   background-color: transparent;
-}
- #top_menu .id-calculator:after {
-  content: '▼';
-  color: white;
-  font-size: 0.5em;
-  position: relative;
-  left: -7px;
-  top: -2px;
 }
 #top_menu .id-calculator.dialog_tab_selected:after {
   opacity: 0.6;
 }
 body a.button, body input[type=button].button, body.touch #current_calc_header {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: 'Manrope', Verdana, Arial, Helvetica, sans-serif;
   padding-left: 1em;
   padding-right: 1em;
   /* background-image: none; */

@@ -447,7 +447,6 @@ body.mobile .option_selector {
 /** temp **/
 #feedback_section{
   clear:both; 
-  margin-top:1em; 
   margin-bottom:1em;
 }
 /** graph **/
@@ -589,6 +588,39 @@ body.mobile .option_selector {
   }
 }
 
+/* stratSummary */
+.stratSummary__heading {
+  color:  #800;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.stratSummary__group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stratSummary__group__title {
+  font-weight: 600;
+  color: #555;
+}
+.stratSummary__group__value,
+.stratSummary__group__title {
+  flex-grow: 1;
+  flex-basis: 50%;
+  white-space: nowrap;
+}
+.stratSummary__group__value {
+  flex-shrink: 1;
+}
+#stratArticle {
+  max-width: 70ch;
+}
+.stratArticle__header {
+  /* font-size:15px;
+  font-weight: 800;
+  color:#A50000;
+  font-family: 'Manrope', verdana, arial, san-serif;
+  padding-bottom:0px; */
+}
 .element_option_selector .option-description.option-description--has-content {
   margin-right: 1ch;
 }
@@ -613,6 +645,15 @@ input[name=underlying-symbol]+.button,
 input[name=symbol-symbol]+.button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+#stratArticle {
+  margin: 1rem 1rem;
+}
+
+#content_holder_inner {
+  display: flex;
+  flex-direction: row-reverse;
 }table.graph td.d div, table.graph th.t {
  min-width:24px;
  position:relative;
@@ -682,6 +723,7 @@ table.graph td.four_digit .neg, table.graph td.five_digit .neg{
 }
 
 table.graph td.d div a, table.graph th.t div a{
+  font-family: Verdana, Arial, sans-serif;
   color:inherit;
   border:none;
   width:24px;

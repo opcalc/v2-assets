@@ -67,6 +67,7 @@ table.graph td.four_digit .neg, table.graph td.five_digit .neg{
 }
 
 table.graph td.d div a, table.graph th.t div a{
+  font-family: Verdana, Arial, sans-serif;
   color:inherit;
   border:none;
   width:24px;

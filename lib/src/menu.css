@@ -8,20 +8,23 @@
 #top_menu {
   margin-top:12px;
   margin-bottom:0;
-  padding:3px 0 0 30px;
+  padding: 0 0 0 30px;
   background-color: #660000;
   background-color: rgba(0,0,0,.3);
+  display: flex;
 }
 .menu li {
-  float:left;
+  float: left;
   list-style-type:none;
-  padding-bottom:1px;
   box-sizing: border-box;
  }
 #top_menu>li {
-  padding-bottom:4px;
-  font-weight: bold;
-  font-size: 90%;
+  float: none;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.2px;
 }
 #menu .jq_exclusive_target, #home_menu {
   position:relative;
@@ -49,34 +52,60 @@
   max-width: 100%;
   padding:0; margin:0;
  }
-body:not(.touch) #menu .dialog_tab_selected {
-  background-color: #4d4d4d;
+body:not(.touch) #menu .dialog_tab_selected a {
+  background-color: #343438;
   border-radius: 5px 5px 0px 0px;
   -moz-border-radius: 5px 5px 0px 0px;
   -webkit-border-radius: 5px 5px 0px 0px;
-  padding-top:4px;
-  padding-bottom:0;
 }
 /* STYLINGS */
 #top_menu li a{
- padding:3px 10px; 
+ display: inline-block;
+ padding: 5px 10px 5px;
  color:#fff;
  text-decoration: none;
 }
 #top_menu li a:hover {
   text-decoration: underline;
-  text-decoration-color: #ffffff80;
+  /* text-decoration-color: #ffffff80; */
 }
 #top_menu li a:active, #top_menu li a:focus {
   text-decoration: underline;
-  text-decoration-color: #ffffffFF;
+  /* text-decoration-color: #ffffffFF; */
 }
 #top_menu li.--active a{
  text-decoration: underline;
 }
+#top_menu li.id-calculator {
+  position: relative;
+}
+#top_menu li.id-calculator a {
+  padding-right: 15px;
+}
+#top_menu .id-calculator:after {
+  content: '▼';
+  color: white;
+  font-size: 0.5em;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+}
+#top_but-calculator .menu a {
+  font-size: 14px;
+  padding: 1px 5px;
+}
+#top_but-calculator .menu a .minor {
+  font-weight: 400;
+}
 .menu li a{
  padding: 0 5px 3px 5px;
  color:#fff;
+ text-decoration-color: #ffffff88;
+ opacity: 0.95;
+}
+.menu li a:hover{
+  text-decoration-color: #fff;
+  opacity: 1;
 }
 /*.menu li a.access-member{
   color:#FFFF88;

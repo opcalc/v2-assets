@@ -1,24 +1,30 @@
 /** Tags and basic content **/
 h1, .h1{
   font-size:19px;
-  font-weight: bold;
+  font-weight: 800;
   color:#003366;
   font-family: verdana, arial, san-serif;
   padding-bottom:0px;
+  margin-bottom: 0.5em;
 }
 h2, .h2{
-  font-size:14.3px;
-  font-weight: bold;
+  font-size:16px;
+  font-weight: 800;
   color:#A50000;
-  font-family: verdana, arial, san-serif;
+  font-family: 'Manrope', verdana, arial, san-serif;
   padding-bottom:0px;
+  margin-bottom: 0.5em;
 }
 h3, .h3{
-  font-size:14px;
-  font-weight: bold;
-  color:#333;
-  font-family: arial, san-serif;
-  padding-bottom:0px;
+  font-size:16px;
+  font-weight: 700;
+  color:#111;
+  font-family: 'Manrope', arial, san-serif;
+  padding-bottom: 0px;
+  margin-bottom: 0.5em;
+}
+p + h3, p + h2 { 
+  margin-top: 1.75em;
 }
 p{
   padding-top:0px;
