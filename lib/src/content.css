@@ -185,7 +185,9 @@ font-weight:bold;
 .txt_error{
   color:#dd0000;
 }
-
+.hint {
+  font-style: italic;
+}
 .field_error{
   color:#f00 !important;
   border-color:#f00 !important;
