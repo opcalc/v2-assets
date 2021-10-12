@@ -180,3 +180,8 @@ body.mobile .calcButton.button {
  /* !!! change sub-text to not use br
 
 */
+
+.mobile #stratArticle {
+  margin-left: 0;
+  margin-right: 0;
+}
