@@ -631,6 +631,8 @@ body.touch #current_calc_header {
 }
 body #calcs_holder {
   margin-left: 16px;
+  width: 100%;
+  min-height: 500px;
 }
 body #home_menu, body #menu #top_but-calculator {
   background-image: none;
@@ -855,6 +857,7 @@ body.touch #current_calc_header:after {
   background-color: #660000;
   background-color: rgba(0,0,0,.3);
   display: flex;
+  flex-wrap: wrap;
 }
 .menu li {
   float: left;
@@ -1059,6 +1062,13 @@ a.memb{
 }
 .z2{
  background-color:#fff;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.clickable:active {
+  opacity: 0.7;
 }
 
 .button, .smallButton, .button--outline{

@@ -47,6 +47,13 @@ a.memb{
  background-color:#fff;
 }
 
+.clickable {
+  cursor: pointer;
+}
+.clickable:active {
+  opacity: 0.7;
+}
+
 .button, .smallButton, .button--outline{
   color:#FFF;
   text-decoration:none;

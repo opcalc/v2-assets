@@ -631,6 +631,8 @@ body.touch #current_calc_header {
 }
 body #calcs_holder {
   margin-left: 16px;
+  width: 100%;
+  min-height: 500px;
 }
 body #home_menu, body #menu #top_but-calculator {
   background-image: none;

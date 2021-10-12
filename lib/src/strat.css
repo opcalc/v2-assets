@@ -644,6 +644,9 @@ input[name=symbol-symbol]+.button {
 #stratArticle {
   margin: 1rem 1rem;
 }
+#stratArticle h2+div {
+  margin-bottom: 1.6em;
+}
 
 #content_holder_inner {
   display: flex;

@@ -12,6 +12,7 @@
   background-color: #660000;
   background-color: rgba(0,0,0,.3);
   display: flex;
+  flex-wrap: wrap;
 }
 .menu li {
   float: left;
