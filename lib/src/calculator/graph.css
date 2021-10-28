@@ -1,0 +1,385 @@
+table.graph td.d div, table.graph th.t {
+ min-width:24px;
+ position:relative;
+/* background-color:#fff;*/
+ font-size:0.9em;
+}
+table.graph a.subtle{
+ white-space: nowrap;
+ text-decoration:none;
+ margin-left:0;
+}
+table.graph td.pct, table.graph th.pct {
+  white-space: nowrap;
+  font-size:0.75em;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: bold;
+}
+table.graph th.pct{
+  font-size: 0.9em;
+}
+.graphVisTypeIconCtnr {
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: flex-start;
+}
+.graphVisTypeIcon[name=graphVisTypeIcon--matrix] {
+  padding: 5px;
+}
+.graphVisTypeIcon {
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  padding: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+}
+.graphVisTypeIcon:last-of-type {
+  margin-right: 0;
+}
+
+.graphVisTypeIcon:not(.__active):hover {
+    background-color: #33333311;
+}
+.graphVisTypeIcon.__active {
+    background-color: #e4eafb;
+    color: #2b49df
+}
+.graphVisTypeIcon svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+table.graph td.four_digit{
+  font-size:0.88em;
+}
+table.graph td.five_digit{
+  font-size:0.8em;
+}
+table.graph td.four_digit .neg, table.graph td.five_digit .neg{
+  font-size:0.85em;
+}
+
+table.graph td.d div a, table.graph th.t div a{
+  font-family: Verdana, Arial, sans-serif;
+  color:inherit;
+  border:none;
+  width:24px;
+  overflow: hidden;
+  text-align:right;
+  letter-spacing:-.25ex;
+  padding-right:1px;
+}
+
+table.graph td.d.hover div a, table.graph th.t.hover div a {
+  border-bottom:1px dashed #669;
+  color:#1c94c4;
+}
+table.graph td.d.hover:first-of-type div a div {
+  right: auto;
+  left: 0;
+  bottom: 20px;
+  padding: 2px;
+  background: white;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.6);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.6);
+  box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.6);
+}
+table.graph td.d.hover:first-of-type div a div:after {
+  content: '';
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+}
+table.graph td.d.hover .hover, table.graph th.t.hover .hover {
+  position:absolute;
+  min-width:22px;
+  width:auto;
+  padding:2px 10px 10px 4px;
+
+  /*border-bottom:1px dashed #669;*/
+  /*margin-bottom:2px;*/
+
+  z-index:2;
+  right:20px;
+  bottom:10px;
+
+  /*background-color:#fff;*/
+  background: transparent url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/table-hover-bg.png') right bottom;  /* absolute-url */
+
+  /*-moz-box-shadow: -2px 1px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow:-2px 1px 4px rgba(0,0,0,0.5);
+  box-shadow: -2px 1px 4px rgba(0,0,0,0.5);*/
+
+  font-size:1.4em;
+  color:#669;
+  cursor:pointer;
+  letter-spacing:0ex;
+
+  *width:75px;
+  *top: -12px;
+  *border:1px solid #999;
+  *border-right:none;
+}
+table.graph th.t.hover .hover {
+  font-weight: normal;
+}
+table.graph th.t.hover div a{
+  top:-4px;
+  *width:120px;
+}
+
+table.graph tr.curPriceAbove td, table.graph tr.curPriceAbove th{
+  border-top:1px solid #444;
+}
+table.graph tr.curPriceRow td, table.graph tr.curPriceRow th{
+  border-top:1px solid #444;
+  border-bottom:1px solid #444;
+}
+table.graph tr.curPriceRow th{
+  background-color:#ddd;
+}
+
+/*table.graph div.enlarged a{
+  border-bottom:1px dashed #669;
+}*/
+
+/* not implimented - inteded to fade out png overtop of cut-off number for aesthetics
+table.graph td.d div.overlay{
+  position:absolute;
+  right:0;
+  top:0;
+  z-index:4;
+}*/
+
+.mobile .dialog-optionSelector {
+  bottom: 0 !important;
+  top: 0 !important;
+}
+
+.detailPopup .ui-dialog-content {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+body.mobile .detailPopup {
+  bottom: 0 !important;
+  top: auto !important;
+}
+.ui-dialog .ui-dialog-titlebar {
+  padding: 0.3em .5em;
+  margin-left: -2px;
+  margin-top: -2px;
+  margin-right: -2px;
+}
+
+.ui-dialog .ui-dialog-content {
+  padding-top: 0;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  background-color: transparent;  
+  border: none;
+  padding: 0;
+}
+.ui-dialog .ui-button .ui-icon {
+  background-image: none;
+  text-indent: 0;
+  line-height: 100%;
+}
+.ui-dialog .ui-button .ui-icon:after {
+  content: '\2715';
+  color:white;
+  position:absolute;
+  text-indent: 9999;
+  inset: 0;
+  left: 0;
+  right: 0;
+  top: 1px;
+  bottom: 0;
+  font-size:1.2rem;
+}
+
+.ui-widget-header {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+.ui-dialog .ui-dialog-title {
+  width: calc(100% - 18px);
+
+}
+
+.trade_summary{
+  font-size:0.85rem;
+  white-space: nowrap;
+}
+.trade_summary .subtotal td{
+  border-top:1px solid #666;
+  padding-bottom:0.2em;
+}
+.trade_summary .total td{
+  border-top:double 3px #666;
+}
+.trade_summary td{
+  padding-left:1em;
+}
+.trade_summary td:first-child, .trade_summary th:first-child{
+  padding-left:5px;
+}
+.trade_summary td:last-child, .trade_summary th:last-child{
+  padding-right:5px;
+}
+.trade_summary th{
+  border-bottom:1px solid #666;
+}
+.ui-dialog{
+  -moz-box-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+  -webkit-box-shadow:4px 4px 6px rgba(0,0,0,0.5);
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.5);
+}
+.weeklyIndicator {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  top: 1px;
+  margin-left: 1px;
+  font-size: 0.8rem;
+  width: 1em;
+  height: 1em;
+  color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.weeklyIndicator:after {
+  content: "w";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  font-size:0.8em;
+  height: 100%;
+  width: 100%;
+  color: #999
+}
+
+/* *** Numerics *** */
+
+.maxRisk{background-color: #800; color:#f66}
+.p-100{  background-color: #f00; }
+.p-95{  background-color: rgb(255,12,12); }
+.p-90{  background-color: rgb(255,24,24); }
+.p-85{  background-color: rgb(255,36,36); }
+.p-80{  background-color: rgb(255,48,48); }
+.p-75{  background-color: rgb(255,61,61); }
+.p-70{  background-color: rgb(255,73,73); }
+.p-65{  background-color: rgb(255,85,85); }
+.p-60{  background-color: rgb(255,97,97); }
+.p-55{  background-color: rgb(255,109,109); }
+.p-50{  background-color: rgb(255, 122,122); }
+.p-45{  background-color: rgb(255, 134,134); }
+.p-40{  background-color: rgb(255, 146,146); }
+.p-35{  background-color: rgb(255, 158,158); }
+.p-30{  background-color: rgb(255, 170,170); }
+.p-25{  background-color: rgb(255, 182,182); }
+.p-20{  background-color: rgb(255, 194,194); }
+.p-15{  background-color: rgb(255, 207,207); }
+.p-10{  background-color: rgb(255, 218,218); }
+.p-5{  background-color: rgb(255, 231,231); }
+
+.p-0, .p0{  background-color: #FFFFFF; }
+
+.maxProfit{background-color: #080; color:#6f6}
+.p200{  background-color: rgb(0,225,0); }
+.p195{  background-color: rgb(0,235,0); }
+.p190{  background-color: rgb(0,245,0); }
+.p185{  background-color: rgb(0,255,0); }
+.p180{  background-color: rgb(7,255,0); }
+.p175{  background-color: rgb(14,255,0); }
+.p170{  background-color: rgb(21,255,0); }
+.p165{  background-color: rgb(28,255,0); }
+.p160{  background-color: rgb(35,255,0); }
+.p155{  background-color: rgb(42,255,0); }
+.p150{  background-color: rgb(49,255,0); }
+.p145{  background-color: rgb(56,255,0); }
+.p140{  background-color: rgb(63,255,0); }
+.p135{  background-color: rgb(70,255,0); }
+.p130{  background-color: rgb(77,255,0); }
+.p125{  background-color: rgb(84,255,0); }
+.p120{  background-color: rgb(95,255,0); }
+.p115{  background-color: rgb(101,255,0); }
+.p110{  background-color: rgb(107,255,0); }
+.p105{  background-color: rgb(114,255,0); }
+
+.p100{  background-color: rgb(117,255,0); }
+.p95{  background-color: rgb(120,255,12); }
+.p90{  background-color: rgb(126,255,24); }
+.p85{  background-color: rgb(132,255,36); }
+.p80{  background-color: rgb(138,255,48); }
+.p75{  background-color: rgb(144,255,61); }
+.p70{  background-color: rgb(150,255,73); }
+.p65{  background-color: rgb(156,255,85); }
+.p60{  background-color: rgb(162,255,97); }
+.p55{  background-color: rgb(168,255,109); }
+.p50{  background-color: rgb(174,255, 122); }
+.p45{  background-color: rgb(180,255, 134); }
+.p40{  background-color: rgb(186,255,146); }
+.p35{  background-color: rgb(192,255, 158); }
+.p30{  background-color: rgb(199,255, 170); }
+.p25{  background-color: rgb(205,255, 182); }
+.p20{  background-color: rgb(211,255,194); }
+.p15{  background-color: rgb(217,255,207); }
+.p10{  background-color: rgb(223,255,218); }
+.p5{  background-color: rgb(229,255, 231); }
+
+td.d:last-child, th.t:last-child {
+  border-left: 1px solid rgba(209, 209, 209, 0.5)
+}
+th.t:last-child {
+  background: dimgray;
+  color: white;
+}
+
+/* table border */
+table.graph tr th:first-child {
+  border-left: 1px solid #e3e3e3 !important;
+  padding-left: 3px;  
+  padding-right: 3px;
+}
+table.graph tr th:last-child, table.graph tr td:last-child {
+  border-right: 1px solid #e3e3e3 !important;
+  padding-left: 3px;  
+  padding-right: 3px;
+}
+
+table.graph tr:nth-child(1) td,
+table.graph tr:nth-child(1) th {
+  border-top: 1px solid #e3e3e3 !important;
+}
+table.graph tr:last-child td,
+table.graph tr:last-child th,
+table.graph tr:nth-child(2) td,
+table.graph tr:nth-child(2) th  {
+  border-bottom: 1px solid #e3e3e3 !important;
+}
+table.graph tr:nth-child(1) td, table.graph tr:nth-child(1) th {
+  border-top: 1px solid #e3e3e3 !important;
+}
+/* Top-left cell with stock code */
+table.graph tr:nth-child(2) > th:first-child {
+  text-align: center;
+  font-size:85%;
+}
+table.graph tr > th:first-child {
+  position: sticky;
+  left: -10px;
+  background-color: white;
+  z-index: 2;
+}

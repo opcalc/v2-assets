@@ -1,3 +1,3 @@
-rsync -avz ../v2/images/ images
-rsync -avz ../v2/lib/ lib
-cp ../v2/favicon.ico ./
+rsync -avz ../images/ images
+rsync -avz ../lib/ lib
+cp ../favicon.ico ./
