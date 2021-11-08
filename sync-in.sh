@@ -1,5 +1,5 @@
-rsync -avz ../images/ images
-rsync -avz ../lib/ lib
+rsync -avz ../images/ images --delete-after
+rsync -avz ../lib/ lib --delete-after
 rm -rf lib/dist
 rm -rf lib/src
 mkdir lib/dist

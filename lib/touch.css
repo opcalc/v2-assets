@@ -1,7 +1,7 @@
 .touch #top{
   background-image: url('https://cdn.jsdelivr.net/gh/opcalc/v2-assets/images/touch/head.gif'); /* absolute-url */
 }
-.touch #main_pad {
+.touch .content_columns {
   display: block;
 }
 .touch #top_menu{
