@@ -8,9 +8,10 @@
  position: static;
  width: 100%;
 }
-.mobile #calcs_holder {
+body.mobile #calcs_holder {
   min-height: 0px;
   margin-left: 0px;
+  width: 100%;
 }
 
 /* Strategy calcs */
